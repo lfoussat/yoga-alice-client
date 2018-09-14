@@ -1,0 +1,26 @@
+#yoga_alice_carousel {
+  width: 100%;
+}
+
+.mySlides {
+  width: 100%;
+  max-height: 94vh;
+}
+
+.ya-animate-fading {
+  animation: fading 9s infinite;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

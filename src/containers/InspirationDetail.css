@@ -1,0 +1,29 @@
+.fas {
+  font-size: 22px;
+  margin-left: 0;
+  padding-right: 10px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+p {
+  padding: 20px;
+}
+
+.pPicture {
+  text-align: center;
+}
+
+.pPicture img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.pText p {
+  text-align: justify;
+  padding-top: 0;
+}
