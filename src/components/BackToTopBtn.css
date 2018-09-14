@@ -1,12 +1,10 @@
-/*Back to top button*/
-
 #arrowTop {
-  width:50px;
-  height:50px;
-  transition-property:transform;
-  transition-duration:0.5s;
-  transition-delay:0.1s;
-  transition-timing-function:ease-in-out;
+  width: 50px;
+  height: 50px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
 }
 
 #arrowTop:hover {
@@ -14,19 +12,20 @@
 }
 
 .backToTop {
-  text-align:center;
-  display:block;
-  margin-top:70px;
+  text-align: center;
+  display: block;
+  margin-top: 70px;
 }
 
 .backToTop a p {
-  text-transform:uppercase;
-  text-align:center;
-  font-size:16px;text-decoration:none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
   color: #070707;
   padding: 10px;
 }
 
 .backToTop a {
-  text-decoration:none;
+  text-decoration: none;
 }

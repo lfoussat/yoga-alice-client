@@ -3,8 +3,12 @@ import { Link } from '@reach/router'
 import Logo from '../logo-alice.png'
 import './Header.css'
 
-const openNav = () => document.getElementById('burgerNav').style.width = '100%'
-const closeNav = () => document.getElementById('burgerNav').style.width = '0%'
+const openNav = () => {
+  document.getElementById('burgerNav').style.width = '100%'
+}
+const closeNav = () => {
+  document.getElementById('burgerNav').style.width = '0%'
+}
 
 const Header = () =>
   <header id="yogaAliceHeader">

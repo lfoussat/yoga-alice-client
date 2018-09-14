@@ -7,8 +7,7 @@ import { Link } from '@reach/router'
 import { api } from '../api.js'
 
 class YogaAlice extends Component {
-
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
@@ -36,13 +35,13 @@ class YogaAlice extends Component {
             <p>Je suis diplômé en shiatsu traditionnel de l'école de Bernard Bouheret,
             je pratique assidûment la méditation et le gi gong. </p>
             <p><Link to='/cours' className='contactLink'>En savoir plus sur mes cours</Link><br/>
-            <Link to='/shiatsu' className='contactLink'>En savoir plus sur le shiatsu</Link><br/>
-            <Link to='/stages' className='contactLink'>Découvrir les stages</Link><br/></p>
+              <Link to='/shiatsu' className='contactLink'>En savoir plus sur le shiatsu</Link><br/>
+              <Link to='/stages' className='contactLink'>Découvrir les stages</Link><br/></p>
             <Button className='contactButton'><Icon name='mail' />Me contacter par email</Button>
           </Grid.Column>
         </Grid>
-      <Footer />
-    </Container>
+        <Footer />
+      </Container>
     )
   }
 }

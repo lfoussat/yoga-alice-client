@@ -23,18 +23,16 @@ class Home extends Component {
   animateCarousel = () => {
     if (this.state.currentSlide === this.state.mySlides.length - 1) {
       this.setState({ currentSlide: 0 })
-    }
-    else {
+    } else {
       this.setState({ currentSlide: this.state.currentSlide + 1 })
     }
   }
 
-  componentDidMount() {
-    setInterval(this.animateCarousel, 9000);
+  componentDidMount () {
+    setInterval(this.animateCarousel, 9000)
   }
 
-  render() {
-
+  render () {
     return (
       <Container fluid>
         <Header />
@@ -47,19 +45,19 @@ class Home extends Component {
         <div className="parallax"></div>
         <div id="forme-parallax-1"></div>
         <section>
-        <Grid id="about_me">
-          <Grid.Column mobile={16} tablet={16} computer={8} className='about_me_text'>
-            <div className='text'>
-            <h2>À propos de moi ...</h2>
-            <p>Bonjour, je m’appelle Alice. Je suis professeur de yoga certifiée yoga alliance 200h, en yoga vinyasa « Vanda Scaravelli ».</p>
-            <p>Mon souhait est d'offrir des cours créatifs et bienveillants dans le respect des corps et des personnalités de chacun.</p>
-            <Link to='/yoga-alice'>En savoir plus</Link>
-            </div>
-          </Grid.Column>
-          <Grid.Column mobile={16} tablet={16} computer={8}>
-            <img src={`${api}/images/pose1.jpg`} alt='Alice Olagnon' />
-          </Grid.Column>
-        </Grid>
+          <Grid id="about_me">
+            <Grid.Column mobile={16} tablet={16} computer={8} className='about_me_text'>
+              <div className='text'>
+                <h2>À propos de moi ...</h2>
+                <p>Bonjour, je m’appelle Alice. Je suis professeur de yoga certifiée yoga alliance 200h, en yoga vinyasa « Vanda Scaravelli ».</p>
+                <p>Mon souhait est d'offrir des cours créatifs et bienveillants dans le respect des corps et des personnalités de chacun.</p>
+                <Link to='/yoga-alice'>En savoir plus</Link>
+              </div>
+            </Grid.Column>
+            <Grid.Column mobile={16} tablet={16} computer={8}>
+              <img src={`${api}/images/pose1.jpg`} alt='Alice Olagnon' />
+            </Grid.Column>
+          </Grid>
         </section>
         <section>
           <Grid>
@@ -102,24 +100,24 @@ class Home extends Component {
           </Grid>
           <Grid>
             <Grid.Column mobile={16} tablet={16} computer={8}>
-            <div className="text" id="stages">
-              <article className="txtCenter">
-                <h2>Shiatsu</h2>
-                <p>Je suis diplômée en shiatsu traditionnel auprès de Bernard Bouheret.</p>
-                <p>Je vous reçois donc à mon domicile (prévoyez 1h30 sur place).</p>
-                <p>Le shiatsu est une technique manuelle japonaise favorisant la bonne circulation énergétique dans le corps. Il est particulièrement recommandé en cas :</p>
-                <ul>
-                  <li>Prévenir l’anxiété, stress</li>
-                  <li>Soulager les maux de dos, tensions</li>
-                  <li>Soutenir le corps en cas de fatigue, épuisement</li>
-                  <li>Prévenir les troubles du sommeil</li>
-                  <li>Prévenir les maux digestifs</li>
-                </ul>
-                <Link to='/shiatsu'>En savoir plus</Link>
-              </article>
-            </div>
-          </Grid.Column>
-          <Grid.Column mobile={16} tablet={16} computer={8}>
+              <div className="text" id="stages">
+                <article className="txtCenter">
+                  <h2>Shiatsu</h2>
+                  <p>Je suis diplômée en shiatsu traditionnel auprès de Bernard Bouheret.</p>
+                  <p>Je vous reçois donc à mon domicile (prévoyez 1h30 sur place).</p>
+                  <p>Le shiatsu est une technique manuelle japonaise favorisant la bonne circulation énergétique dans le corps. Il est particulièrement recommandé en cas :</p>
+                  <ul>
+                    <li>Prévenir l’anxiété, stress</li>
+                    <li>Soulager les maux de dos, tensions</li>
+                    <li>Soutenir le corps en cas de fatigue, épuisement</li>
+                    <li>Prévenir les troubles du sommeil</li>
+                    <li>Prévenir les maux digestifs</li>
+                  </ul>
+                  <Link to='/shiatsu'>En savoir plus</Link>
+                </article>
+              </div>
+            </Grid.Column>
+            <Grid.Column mobile={16} tablet={16} computer={8}>
               <figure className="diapo">
                 <img src={`${api}/images/stage-session-cadre.jpg`} alt='informations shiatsu' />
               </figure>
@@ -156,8 +154,6 @@ class Home extends Component {
       </Container>
     )
   }
-
-
 }
 
 export default Home

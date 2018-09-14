@@ -10,11 +10,11 @@ class InspirationDetail extends Component {
     inspiration: {}
   }
 
-  componentDidMount() {
+  componentDidMount () {
     getInspirationById(this.props.id).then(i => this.setState({ inspiration: i }))
   }
 
-  render() {
+  render () {
     console.log(this.state.inspiration)
     return (
       <Container fluid>

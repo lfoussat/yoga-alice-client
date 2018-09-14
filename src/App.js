@@ -18,7 +18,7 @@ class App extends Component {
     inspiration: []
   }
 
-  constructor() {
+  constructor () {
     super()
     getAllInspirations().then(i => this.setState({ inspirations: i }))
   }

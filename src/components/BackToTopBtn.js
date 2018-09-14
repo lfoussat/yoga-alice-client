@@ -9,4 +9,4 @@ const BackToTopBtn = () =>
     </div>
   </section>
 
-  export default BackToTopBtn
+export default BackToTopBtn

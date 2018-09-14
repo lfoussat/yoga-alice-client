@@ -5,14 +5,13 @@ import { Container, Grid, Icon } from 'semantic-ui-react'
 import './Contact.css'
 
 class Contact extends Component {
-
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
 
         <section className="contactBackground">
-        <h1>Contact</h1>
+          <h1>Contact</h1>
           <Grid>
             <Grid.Column mobile={16} tablet={16} computer={8} className="formulaire" id="contact-me">
               <h2>Mes coordonnées</h2>

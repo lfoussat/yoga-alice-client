@@ -6,8 +6,7 @@ import { Container, Grid } from 'semantic-ui-react'
 import './InspirationsDisplay.css'
 
 class InspirationsDisplay extends Component {
-
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />

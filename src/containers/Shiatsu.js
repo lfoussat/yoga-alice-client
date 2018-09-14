@@ -6,8 +6,7 @@ import './Courses.css'
 import { api } from '../api.js'
 
 class Shiatsu extends Component {
-
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
@@ -24,44 +23,44 @@ class Shiatsu extends Component {
             tablet={16}
             computer={8} className="scrolled-text">
             <h1>Shiatsu</h1>
-              <p>Je suis diplômée en shiatsu traditionnel auprès de Bernard Bouheret.</p>
-              <p>Je vous reçois donc à mon domicile, 60 euros la séance de shiatsu (prévoyez 1h30 sur place) :</p>
-              <p>Le shiatsu est une technique manuelle japonaise favorisant la bonne circulation énergétique dans le corps. Il est particulièrement recommandé en cas :</p>
-              <ul>
-                <li>Prévenir l’anxiété, stress</li>
-                <li>Soulager les maux de dos, tensions</li>
-                <li>Soutenir le corps en cas de fatigue, épuisement</li>
-                <li>Prévenir les troubles du sommeil</li>
-                <li>Prévenir les maux digestifs</li>
-              </ul>
+            <p>Je suis diplômée en shiatsu traditionnel auprès de Bernard Bouheret.</p>
+            <p>Je vous reçois donc à mon domicile, 60 euros la séance de shiatsu (prévoyez 1h30 sur place) :</p>
+            <p>Le shiatsu est une technique manuelle japonaise favorisant la bonne circulation énergétique dans le corps. Il est particulièrement recommandé en cas :</p>
+            <ul>
+              <li>Prévenir l’anxiété, stress</li>
+              <li>Soulager les maux de dos, tensions</li>
+              <li>Soutenir le corps en cas de fatigue, épuisement</li>
+              <li>Prévenir les troubles du sommeil</li>
+              <li>Prévenir les maux digestifs</li>
+            </ul>
             <h2>Mes disponibilités</h2>
-              <Table basic='very' celled collapsing>
-                <Table.Header>
-                  <Table.Row>
-                    <Table.HeaderCell>Horaire</Table.HeaderCell>
-                  </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                  <Table.Row>
-                    <Table.Cell>Mardi de 14h à 17h</Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell>Jeudi de 15h à 20h</Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell>Vendredi de 10h à 19h</Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell>Samedi de 14h à 17H</Table.Cell>
-                  </Table.Row>
-                </Table.Body>
-              </Table>
-              <p>N’hésitez pas à me poser vos questions sur le shiatsu par mail, j’y répondrai avec grand plaisir.</p>
-              <Button className='contactButton'><Icon name='mail' />Me contacter par email</Button>
+            <Table basic='very' celled collapsing>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Horaire</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>
+                <Table.Row>
+                  <Table.Cell>Mardi de 14h à 17h</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>Jeudi de 15h à 20h</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>Vendredi de 10h à 19h</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>Samedi de 14h à 17H</Table.Cell>
+                </Table.Row>
+              </Table.Body>
+            </Table>
+            <p>N’hésitez pas à me poser vos questions sur le shiatsu par mail, j’y répondrai avec grand plaisir.</p>
+            <Button className='contactButton'><Icon name='mail' />Me contacter par email</Button>
           </Grid.Column>
         </Grid>
-      <Footer />
-    </Container>
+        <Footer />
+      </Container>
     )
   }
 }

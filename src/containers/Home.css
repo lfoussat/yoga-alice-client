@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway+Dots');
 
 .ui.grid { /* à vérifier */
-	margin-left: 0;
+  margin-left: 0;
 }
 
 .quote {
@@ -59,22 +59,31 @@
 }
 
 #shiatsu h2 {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #about_me { /* à vérifier */
-	text-align: center;
+  text-align: center;
 }
 
 .about_me_text {
-	display: flex !important;
-	flex: 1;
-	flex-direction: column;
-	justify-content: center;
+  display: flex !important;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #about_me h2 {
   margin: 50px;
+}
+
+.inspiration img {
+  height: 200px;
+  text-align: center;
+}
+
+figure.diapo img {
+  width: 100%;
 }
 
 #about_me img {
@@ -88,7 +97,19 @@
   text-align: justify;
 }
 
-#about_me a, #stages a, #cours a, #shiatsu a {
+.inspiration a {
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgba(7, 7, 7, 0.6);
+  height: 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#about_me a,
+#stages a,
+#cours a,
+#shiatsu a {
   border-top: 1px solid rgba(185, 179, 174, 0.5);
   border-bottom: 1px solid rgba(185, 179, 174, 0.5);
   width: 100%;
@@ -100,51 +121,9 @@
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(128, 128, 128);
-  box-shadow: 0px 1px 0px #00000026;
+  box-shadow: 0 1px 0 #00000026;
   margin-bottom: 40px;
   cursor: pointer;
-}
-
-#about_me a:hover, #stages a:hover, #cours a:hover, #shiatsu a:hover {
-  color: #43986A;
-  border-color: #43986A;
-}
-
-/* Green banner style */
-.greenBanner{
-  padding: 50px;
-  color: rgba(7, 7, 7, 0.6);
-}
-
-/* test color animation */
-.colorAnimation{
-  animation: colorAnimation 15s ease-in-out infinite both;
-  -webkit-animation: colorAnimation 15s ease-in-out infinite both;
-}
-
-figure.diapo {
-    margin: 0;
-}
-
-figure.diapo img {
-    width: 100%;
-}
-
-.eight.wide.computer.sixteen.wide.mobile.sixteen.wide.tablet.column {
-    padding-left: 0;
-}
-
-#avis p:nth-child(2) {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-}
-
-#see-all-inspi {
-  background-color: #442B48;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px;
-  line-height: 40px;
 }
 
 #see-all-inspi a {
@@ -152,24 +131,32 @@ figure.diapo img {
   text-decoration: none;
 }
 
-#see-all-inspi p {
-  margin: 0px;
+#about_me a:hover,
+#stages a:hover,
+#cours a:hover,
+#shiatsu a:hover {
+  color: #43986a;
+  border-color: #43986a;
 }
 
-/* inspiraitons */
-.inspiration {
-  height: 450px;
-  padding: 20px;
+/* Green banner style */
+.greenBanner {
+  padding: 50px;
+  color: rgba(7, 7, 7, 0.6);
 }
 
-.inspiration img {
-  height: 200px;
-  text-align: center;
+/* test color animation */
+.colorAnimation {
+  animation: colorAnimation 15s ease-in-out infinite both;
+  -webkit-animation: colorAnimation 15s ease-in-out infinite both;
 }
 
-.fa, .fas {
-  font-size: 42px;
-  /*margin-left: 45%;*/
+figure.diapo {
+  margin: 0;
+}
+
+.eight.wide.computer.sixteen.wide.mobile.sixteen.wide.tablet.column {
+  padding-left: 0;
 }
 
 .inspiration p {
@@ -179,21 +166,45 @@ figure.diapo img {
   padding: 15px;
 }
 
-div#inspirations {
-    padding: 0;
+#see-all-inspi p {
+  margin: 0;
 }
 
-#inspiration-bloc h2, .inspiration a {
+#avis p:nth-child(2) {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+#see-all-inspi {
+  background-color: #442b48;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  line-height: 40px;
+}
+
+/* inspiraitons */
+.inspiration {
+  height: 450px;
+  padding: 20px;
+}
+
+.fa,
+.fas {
+  font-size: 42px;
+}
+
+div#inspirations {
+  padding: 0;
+}
+
+#inspiration-bloc h2 {
   text-align: center;
   padding-bottom: 10px;
   color: rgba(7, 7, 7, 0.6);
   height: 75px;
-  margin-top: 20px;
   margin-bottom: 20px;
-}
-
-#inspiration-bloc h2 {
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 #contact {
@@ -210,8 +221,8 @@ div#inspirations {
 
 #contactText {
   text-align: justify;
-  margin: auto; 
-  margin-bottom: 30px; 
+  margin: auto;
+  margin-bottom: 30px;
   max-width: 998px;
 }
 
@@ -221,7 +232,7 @@ div#inspirations {
 }
 
 .ui.button {
-  background: #43986A;
+  background: #43986a;
   color: #fff;
   border-radius: 2px;
   font-family: 'Raleway', sans-serif;
@@ -233,25 +244,28 @@ div#inspirations {
   color: #fff;
 }
 
-
 #contact-background p:first-child {
   text-align: justify;
 }
 
 @keyframes colorAnimation {
   0% {
-      background-color: #FEEF97;
+    background-color: #feef97;
   }
+
   25% {
-      background-color: #BCFFDB;
+    background-color: #bcffdb;
   }
+
   50% {
-      background-color: #C1EEFF;
+    background-color: #c1eeff;
   }
+
   75% {
-      background-color: #BEE6CE;
+    background-color: #bee6ce;
   }
+
   100% {
-      background-color: #FEEF97;
+    background-color: #feef97;
   }
 }
