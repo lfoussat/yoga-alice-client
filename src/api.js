@@ -11,13 +11,18 @@ export const api = 'http://localhost:5300'
 //   body: JSON.stringify(content)
 // })
 
-export const getAllInspirations = () => {
-  return fetch(`${api}/inspirations-yoga`)
+export const getAllInspirations = () => { // get all inspirations
+  return fetch(`${api}/inspirations`)
     .then(res => res.json())
 }
 
-export const sendInspiration = formData => {
-  return fetch(`${api}/add-inspiration`, {
+export const getInspirationById = id => { // get an inspiration
+  return fetch(`${api}/inspirations/${id}`)
+    .then(res => res.json())
+}
+
+export const sendInspiration = formData => { // add a new inspiration
+  return fetch(`${api}/inspirations`, {
     method: 'post',
     // 'credentials': 'include',
     body: formData
@@ -25,13 +30,8 @@ export const sendInspiration = formData => {
     .then(res => res.json())
 }
 
-export const getInspirationById = id => {
-  return fetch(`${api}/inspirations-yoga/${id}`)
-    .then(res => res.json())
-}
-
-export const sendUpdateInspiration = (formData, id) => {
-  return fetch(`${api}/update-inspiration/${id}`, {
+export const sendUpdateInspiration = (formData, id) => { // update an inspiration
+  return fetch(`${api}/inspirations/${id}`, {
     method: 'post',
     // 'credentials': 'include',
     body: formData
@@ -39,6 +39,6 @@ export const sendUpdateInspiration = (formData, id) => {
     .then(res => res.json())
 }
 
-export const deleteInspiration = id => {
-  return fetch(`${api}/inspirations-yoga/${id}`, { method: 'delete' })
+export const deleteInspiration = id => { // delete an inspiration
+  return fetch(`${api}/inspirations/${id}`, { method: 'delete' })
 }
