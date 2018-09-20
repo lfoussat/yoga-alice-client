@@ -41,6 +41,7 @@ export const sendUpdateInspiration = (formData, id) => { // update an inspiratio
     .then(res => res.json())
 }
 
-export const deleteInspiration = id => { // delete an inspiration
-  return fetch(`${api}/inspirations/${id}`, { method: 'delete' })
+export const deleteInspirationDb = params => { // delete an inspiration
+  return fetch(`${api}/inspirations/${params.id}`, { method: 'delete' })
+    .then(res => res.json())
 }
