@@ -7,28 +7,22 @@ import { Container, Grid, Button, Icon } from 'semantic-ui-react'
 import InspirationCard from '../components/InspirationCard.js'
 import { Link } from '@reach/router'
 import './Home.css'
-import { api } from '../api.js'
+import { actions } from '../store.js'
+import { api, getAllInspirations } from '../api.js'
 
 class Home extends Component {
-  state = {
-    mySlides: [
-      `${api}/images/yoga-alice-carr-5.jpg`,
-      `${api}/images/yoga-alice-carr-2.jpg`,
-      `${api}/images/yoga-alice-carr-3.jpg`,
-      `${api}/images/yoga-alice-carr-4.jpg`
-    ],
-    currentSlide: 0
-  }
-
   animateCarousel = () => {
-    if (this.state.currentSlide === this.state.mySlides.length - 1) {
-      this.setState({ currentSlide: 0 })
+    if (this.props.currentSlide === this.props.mySlides.length - 1) {
+      actions.updateCurrentSlide(0)
     } else {
-      this.setState({ currentSlide: this.state.currentSlide + 1 })
+      actions.updateCurrentSlide(this.props.currentSlide + 1)
     }
   }
 
   componentDidMount () {
+    getAllInspirations('fo')
+      .then(actions.loadInspirations)
+
     setInterval(this.animateCarousel, 9000)
   }
 
@@ -36,7 +30,7 @@ class Home extends Component {
     return (
       <Container fluid>
         <Header />
-        <Carousel slides={this.state.mySlides} currentSlide={this.state.currentSlide} />
+        <Carousel slides={this.props.mySlides} currentSlide={this.props.currentSlide} />
         <div className="quote">
           <p>Exploration somatique. Intuition. Mouvement libre.<br />
             Yoga organique. Shiatsu. Curiosité.</p>
