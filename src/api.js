@@ -26,6 +26,10 @@ export const sendInspirationDb = title => { // send a new inspiration
   return postJson(`${api}/inspirations`, { title })
     .then(res => res.json())
 }
+
+export const updateInspiration = (id, formData) => { // update an inspiration
+  console.log('coucou - ', id, formData)
+  return fetch(`${api}/inspirations/${id}`, {
     method: 'post',
     // 'credentials': 'include',
     body: formData
@@ -33,8 +37,6 @@ export const sendInspirationDb = title => { // send a new inspiration
     .then(res => res.json())
 }
 
-export const sendUpdateInspiration = (formData, id) => { // update an inspiration
-  return fetch(`${api}/inspirations/${id}`, {
 export const sendNewImage = (id, body) => { // rm ?
   console.log('le body : ', body)
   return fetch(`${api}/inspirations/${id}/image`, {
