@@ -9,7 +9,7 @@ import Courses from './containers/Courses.js'
 import Shiatsu from './containers/Shiatsu.js'
 import Stages from './containers/Stages.js'
 import Contact from './containers/Contact.js'
-import { getAllInspirations } from './api.js'
+import MyInspirations from './containers/MyInspirations.js'
 
 import './App.css'
 
@@ -35,6 +35,9 @@ class App extends Component {
         <InspirationsDisplay {...this.state} path='/inspirations' />
         <InspirationDetail {...this.state} path='/inspirations/:id' />
         <Contact path='/contact' />
+        <MyInspirations {...this.state} path='/my-inspirations' />
+        <MyInspirations {...this.state} remove path='/my-inspirations/:id/remove' />
+        <MyInspirations {...this.state} new path='/my-inspirations/new' />
       </Router>
     )
   }
