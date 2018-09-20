@@ -35,9 +35,12 @@ export const sendInspirationDb = title => { // send a new inspiration
 
 export const sendUpdateInspiration = (formData, id) => { // update an inspiration
   return fetch(`${api}/inspirations/${id}`, {
+export const sendNewImage = (id, body) => { // rm ?
+  console.log('le body : ', body)
+  return fetch(`${api}/inspirations/${id}/image`, {
     method: 'post',
-    // 'credentials': 'include',
-    body: formData
+    // headers: { 'X-Access-Token': localStorage.token },
+    body
   })
     .then(res => res.json())
 }
