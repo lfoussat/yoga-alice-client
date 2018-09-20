@@ -22,8 +22,10 @@ export const getInspirationById = (id, side) => { // get an inspiration
     .then(res => res.json())
 }
 
-export const sendInspiration = formData => { // add a new inspiration
-  return fetch(`${api}/inspirations`, {
+export const sendInspirationDb = title => { // send a new inspiration
+  return postJson(`${api}/inspirations`, { title })
+    .then(res => res.json())
+}
     method: 'post',
     // 'credentials': 'include',
     body: formData
