@@ -13,11 +13,13 @@ export const api = 'http://localhost:5300'
 
 export const getAllInspirations = () => { // get all inspirations
   return fetch(`${api}/inspirations`)
+export const getAllInspirations = side => { // get all inspirations
+  return fetch(`${api}/${side}/inspirations`)
     .then(res => res.json())
 }
 
-export const getInspirationById = id => { // get an inspiration
-  return fetch(`${api}/inspirations/${id}`)
+export const getInspirationById = (id, side) => { // get an inspiration
+  return fetch(`${api}/${side}/inspirations/${id}`)
     .then(res => res.json())
 }
 
