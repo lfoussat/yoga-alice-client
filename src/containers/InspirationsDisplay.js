@@ -3,9 +3,16 @@ import InspirationCard from '../components/InspirationCard'
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import { Container, Grid } from 'semantic-ui-react'
+import { getAllInspirations } from '../api.js'
+import { actions } from '../store.js'
 import './InspirationsDisplay.css'
 
 class InspirationsDisplay extends Component {
+  componentDidMount () {
+    getAllInspirations('fo')
+      .then(actions.loadInspirations)
+  }
+
   render () {
     return (
       <Container fluid>
