@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Router } from '@reach/router'
+import { store } from './store.js'
 import Home from './containers/Home.js'
 import InspirationsDisplay from './containers/InspirationsDisplay.js'
 import InspirationDetail from './containers/InspirationDetail.js'
@@ -13,14 +14,12 @@ import { getAllInspirations } from './api.js'
 import './App.css'
 
 class App extends Component {
-  state = {
-    inspirations: [],
-    inspiration: []
-  }
-
   constructor () {
     super()
-    getAllInspirations().then(i => this.setState({ inspirations: i }))
+    this.state = store.getState()
+    store.subscribe(() => {
+      this.setState(store.getState())
+    })
   }
 
   render () {
