@@ -2,17 +2,16 @@
 
 export const api = 'http://localhost:5300'
 
-// const postJson = (url, content) => fetch(url, {
-//   method: 'post',
-//   headers: {
-//     'Content-Type': 'application/json'
-//   },
-//   // credentials: 'include',
-//   body: JSON.stringify(content)
-// })
+const postJson = (url, content) => fetch(url, {
+  method: 'post',
+  headers: {
+    // 'X-Access-Token': localStorage.token,
+    'Content-Type': 'application/json'
+  },
+  // credentials: 'include',
+  body: JSON.stringify(content)
+})
 
-export const getAllInspirations = () => { // get all inspirations
-  return fetch(`${api}/inspirations`)
 export const getAllInspirations = side => { // get all inspirations
   return fetch(`${api}/${side}/inspirations`)
     .then(res => res.json())
