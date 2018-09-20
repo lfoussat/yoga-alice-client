@@ -29,13 +29,13 @@ class App extends Component {
     return (
       <Router>
         <Home {...this.state} path='/' />
-        <YogaAlice path='/yoga-alice' />
+        <YogaAlice {...this.state} path='/yoga-alice' />
         <Courses {...this.state} path='/cours' />
-        <Shiatsu path='/shiatsu' />
-        <Stages path='/stages' />
+        <Shiatsu {...this.state} path='/shiatsu' />
+        <Stages {...this.state} path='/stages' />
         <InspirationsDisplay {...this.state} path='/inspirations' />
         <InspirationDetail {...this.state} path='/inspirations/:id' />
-        <Contact path='/contact' />
+        <Contact {...this.state} path='/contact' />
         <MyInspirations {...this.state} path='/my-inspirations' />
         <MyInspirations {...this.state} remove path='/my-inspirations/:id/remove' />
         <MyInspirations {...this.state} new path='/my-inspirations/new' />
