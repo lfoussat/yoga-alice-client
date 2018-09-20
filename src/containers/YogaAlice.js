@@ -11,7 +11,6 @@ class YogaAlice extends Component {
     return (
       <Container fluid>
         <Header />
-
         <Grid>
           <Grid.Column
             mobile={16}
