@@ -179,7 +179,7 @@ figure.diapo {
   background-color: #442b48;
   text-transform: uppercase;
   text-align: center;
-  padding: 20px;
+  padding: 20px !important;
   line-height: 40px;
 }
 
