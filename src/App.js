@@ -10,6 +10,7 @@ import Shiatsu from './containers/Shiatsu.js'
 import Stages from './containers/Stages.js'
 import Contact from './containers/Contact.js'
 import MyInspirations from './containers/MyInspirations.js'
+import InspirationEditor from './containers/InspirationEditor.js'
 
 import './App.css'
 
@@ -38,6 +39,7 @@ class App extends Component {
         <MyInspirations {...this.state} path='/my-inspirations' />
         <MyInspirations {...this.state} remove path='/my-inspirations/:id/remove' />
         <MyInspirations {...this.state} new path='/my-inspirations/new' />
+        <InspirationEditor {...this.state} path='/inspirations/form/:id' />
       </Router>
     )
   }

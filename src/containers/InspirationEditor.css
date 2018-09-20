@@ -1,0 +1,76 @@
+/* css for editor */
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+.ui.input,
+.ui.form textarea {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+i.save.icon,
+i.paper.plane.icon {
+  color: #fff;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-flex;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="radio"]:checked + label {
+  text-decoration: line-through;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#beige,
+#green,
+#blue {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-left: 35px;
+  margin-right: 10px;
+}
+
+#beige {
+  background-color: #f1f7ed;
+}
+
+#blue {
+  background-color: #c1eeff;
+}
+
+#green {
+  background-color: #d3f6db;
+}
+
+input#edit_inspiration_image {
+  border: none;
+  margin-top: -10px;
+}
+
+input#save_btn {
+  background-color: #6435c9;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input#publish_btn {
+  background-color: #43986a;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
