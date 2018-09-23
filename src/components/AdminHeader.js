@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from '@reach/router'
+import { Link, navigate } from '@reach/router'
 import { Icon } from 'semantic-ui-react'
 import Logo from '../logo-alice.png'
 import './Header.css'
@@ -11,6 +11,11 @@ const closeNav = () => {
   document.getElementById('burgerNav').style.width = '0%'
 }
 
+const logout = () => {
+  localStorage.clear()
+  navigate('/')
+}
+
 const AdminHeader = () =>
   <header id="yogaAliceHeader">
     <div id="yogaAliceLogo">
@@ -20,6 +25,7 @@ const AdminHeader = () =>
     <nav id="mainNav">
       <Link to='/my-inspirations'><Icon name='file' />My inspirations</Link>
       <Link to='/my-profile'><Icon name='user' />My profile</Link>
+      <Link to='/sign-in' onClick={logout}><Icon name='user times' />Log out</Link>
     </nav>
     <div id="burgerBtn">
       <a title="Burger button" id="openNavBtn" onClick={openNav}>&#9776;</a>
@@ -29,6 +35,7 @@ const AdminHeader = () =>
       <nav className="overlay-content">
         <Link to='/my-inspirations'><Icon name='file' />My inspirations</Link>
         <Link to='/my-profile'><Icon name='user' />My profile</Link>
+        <Link to='/sign-in' onClick={logout}><Icon name='user times' />Log out</Link>
       </nav>
     </div>
   </header>
