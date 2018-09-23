@@ -37,12 +37,16 @@ export const updateInspiration = (id, formData) => { // update an inspiration
     .then(res => res.json())
 }
 
+export const deleteInspirationDb = params => { // delete an inspiration
+  return fetch(`${api}/inspirations/${params.id}`, {
+    method: 'delete',
+    headers: {
+      'X-Access-Token': localStorage.token
+    }
   })
     .then(res => res.json())
 }
 
-export const deleteInspirationDb = params => { // delete an inspiration
-  return fetch(`${api}/inspirations/${params.id}`, { method: 'delete' })
 // AUTHENTICATION
 export const sendSignUp = (params) =>
   postJson(`${api}/users`, params)
@@ -51,4 +55,3 @@ export const sendSignUp = (params) =>
 export const sendLogin = (params) =>
   postJson(`${api}/auth/local`, params)
     .then(res => res.json())
-}
