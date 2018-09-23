@@ -9,7 +9,7 @@ import './InspirationsDisplay.css'
 
 class InspirationsDisplay extends Component {
   componentDidMount () {
-    getAllInspirations('fo')
+    getAllInspirations()
       .then(actions.loadInspirations)
   }
 
