@@ -31,7 +31,9 @@ export const updateInspiration = (id, formData) => { // update an inspiration
   console.log('coucou - ', id, formData)
   return fetch(`${api}/inspirations/${id}`, {
     method: 'post',
-    // 'credentials': 'include',
+    headers: {
+      'X-Access-Token': localStorage.token
+    },
     body: formData
   })
     .then(res => res.json())
