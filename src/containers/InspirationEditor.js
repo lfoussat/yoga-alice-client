@@ -6,7 +6,7 @@ import './InspirationEditor.css'
 import { actions } from '../store.js'
 import { api, getInspirationById, updateInspiration } from '../api.js' // sendNewImage
 import { formatedDate } from '../FormatedDate.js'
-import { Link } from '@reach/router'
+import { Link, Redirect } from '@reach/router'
 
 const buttonStyle = {
   width: '160px',
@@ -72,6 +72,8 @@ class InspirationEditor extends Component {
   }
 
   render () {
+    if (!localStorage.token) return <Redirect noThrow to='/sign-in' />
+
     const inspiration = this.props.inspiration
     return (
       <Container fluid>

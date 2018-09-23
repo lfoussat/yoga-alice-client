@@ -120,18 +120,20 @@ class Home extends Component {
         </section>
         <div id="forme-parallax-3" className="rotate"></div>
         <div className="parallax"></div>
-        <Grid centered doubling columns={4} id='inspiration-bloc'>
-          <h2>Inspirations</h2>
-          <Grid id="inspirations">
-            {this.props.inspirations
-              .sort((a, b) => b.createdAt - a.createdAt)
-              .slice(0, 4)
-              .map(i => <InspirationCard inspiration={i} key={i.id} />)}
+        <section>
+          <h2 style={{ marginTop: '50px' }}>Inspirations</h2>
+          <Grid doubling columns={4} id='inspiration-bloc'> {/* centered */}
+            <Grid id="inspirations">
+              {this.props.inspirations
+                .sort((a, b) => b.createdAt - a.createdAt)
+                .slice(0, 4)
+                .map(i => <InspirationCard inspiration={i} key={i.id} />)}
+            </Grid>
+            <Grid.Row id="see-all-inspi">
+              <p><Link to="/inspirations">Voir toutes les inspirations</Link></p>
+            </Grid.Row>
           </Grid>
-          <Grid.Row id="see-all-inspi">
-            <p><Link to="/inspirations">Voir toutes les inspirations</Link></p>
-          </Grid.Row>
-        </Grid>
+        </section>
         <div id="avis" className="quote">
           <p>"Des cours qui réveillent tout le corps, donnent la pêche et permettent aussi des moments de détente tout en douceur! Un dosage parfait! Merci Alice!"</p>
           <p>Julie, Cours du mardi</p>

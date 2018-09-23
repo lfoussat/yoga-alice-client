@@ -9,7 +9,7 @@ import './InspirationsDisplay.css'
 
 class InspirationsDisplay extends Component {
   componentDidMount () {
-    getAllInspirations('fo')
+    getAllInspirations()
       .then(actions.loadInspirations)
   }
 
@@ -18,7 +18,7 @@ class InspirationsDisplay extends Component {
       <Container fluid>
         <Header />
         <h1>Inspirations</h1>
-        <Grid centered doubling columns={4} id='inspiration-bloc'>
+        <Grid doubling columns={4} id='inspiration-bloc'> {/* centered */}
           <Grid id="inspirations">
             {this.props.inspirations.map(i => <InspirationCard inspiration={i} key={i.id} />)}
           </Grid>

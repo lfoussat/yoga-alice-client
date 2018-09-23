@@ -12,7 +12,10 @@ const initialState = {
     `${api}/images/yoga-alice-carr-4.jpg`
   ],
   currentSlide: 0,
-  errors: {}
+  errors: {},
+  profile: {
+    email: localStorage.email
+  }
 }
 
 const reducer = (state, action) => {
@@ -75,6 +78,16 @@ const reducer = (state, action) => {
     }
   }
 
+  if (action.type === 'UPDATE_PROFILE') {
+    return {
+      ...state,
+      profile: {
+        ...state.profile,
+        email: action.profile
+      }
+    }
+  }
+
   return state
 }
 
@@ -100,5 +113,6 @@ export const actions = {
   updateCurrentSlide: nextSlide => store.dispatch({ type: 'UPDATE_CURRENT_SLIDE', nextSlide }),
   updateInspiration: inspirationContent => store.dispatch({ type: 'UPDATE_INSPIRATION', inspirationContent }),
   deleteInspiration: inspirationContent => store.dispatch({ type: 'DELETE_INSPIRATION', inspirationContent }),
-  showError: (type, message) => store.dispatch({ type: 'UPDATE_ERROR', error: { type, message } })
+  showError: (type, message) => store.dispatch({ type: 'UPDATE_ERROR', error: { type, message } }),
+  updateProfile: (profile) => store.dispatch({ type: 'UPDATE_PROFILE', profile })
 }

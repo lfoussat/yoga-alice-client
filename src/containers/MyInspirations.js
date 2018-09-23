@@ -3,19 +3,21 @@ import AdminInspirationCard from '../components/AdminInspirationCard'
 import AdminHeader from '../components/AdminHeader.js'
 import Footer from '../components/Footer.js'
 import { Container, Grid, Modal, Form } from 'semantic-ui-react'
-import { getAllInspirations, sendInspirationDb } from '../api.js'
+import { getAllInspirationsForBO, sendInspirationDb } from '../api.js'
 import { actions } from '../store.js'
-import { Link, navigate } from '@reach/router'
+import { Link, navigate, Redirect } from '@reach/router'
 import './InspirationsDisplay.css'
 import './MyInspirations.css'
 
 class MyInspirations extends Component {
   componentDidMount () {
-    getAllInspirations('bo')
+    getAllInspirationsForBO()
       .then(actions.loadInspirations)
   }
 
   render () {
+    if (!localStorage.token) return <Redirect noThrow to='/sign-in' />
+
     return (
       <React.Fragment>
         <Container fluid>

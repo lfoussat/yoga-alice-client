@@ -88,6 +88,7 @@ figure.diapo img {
 
 #about_me img {
   width: 100%;
+  height: 100%;
 }
 
 .text {
@@ -192,6 +193,10 @@ figure.diapo {
 .fa,
 .fas {
   font-size: 42px;
+}
+
+.fas {
+  margin-left: 48% !important;
 }
 
 div#inspirations {
