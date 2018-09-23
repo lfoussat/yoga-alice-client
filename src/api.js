@@ -12,8 +12,18 @@ const postJson = (url, content) => fetch(url, {
   body: JSON.stringify(content)
 })
 
-export const getAllInspirations = side => { // get all inspirations
-  return fetch(`${api}/${side}/inspirations`)
+// INSPIRATIONS
+export const getAllInspirations = () => { // get all inspirations
+  return fetch(`${api}/fo/inspirations`)
+    .then(res => res.json())
+}
+
+export const getAllInspirationsForBO = () => {
+  return fetch(`${api}/bo/inspirations`,
+    {
+      headers: { 'X-Access-Token': localStorage.token }
+    })
+    // .then(inspirations => inspirations.json())
     .then(res => res.json())
 }
 
