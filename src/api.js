@@ -37,12 +37,6 @@ export const updateInspiration = (id, formData) => { // update an inspiration
     .then(res => res.json())
 }
 
-export const sendNewImage = (id, body) => { // rm ?
-  console.log('le body : ', body)
-  return fetch(`${api}/inspirations/${id}/image`, {
-    method: 'post',
-    // headers: { 'X-Access-Token': localStorage.token },
-    body
   })
     .then(res => res.json())
 }
