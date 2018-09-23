@@ -54,5 +54,7 @@ export const sendSignUp = (params) =>
   postJson(`${api}/users`, params)
     .then(res => res.json())
 
+export const sendLogin = (params) =>
+  postJson(`${api}/auth/local`, params)
     .then(res => res.json())
 }
