@@ -5,7 +5,7 @@ const AuthForm = ({ headerMessage, actionName, onSubmit, error, children }) => (
   <div className='AuthForm'>
     <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
       <Grid.Column style={{ maxWidth: 450 }}>
-        <h2 style={{ marginTop: '125px'}}>
+        <h2 style={{ marginTop: '125px' }}>
           {headerMessage}
         </h2>
         <Form size='large' onSubmit={onSubmit}>

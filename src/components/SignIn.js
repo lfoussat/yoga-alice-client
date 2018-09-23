@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from '@reach/router'
 import AuthForm from './AuthForm.js'
 import AuthHeader from '../components/AuthHeader'
-//import './styleError.css'
+// import './styleError.css'
 
 const SignIn = ({ onSubmit, errors }) => (
   <React.Fragment>
