@@ -49,5 +49,10 @@ export const sendNewImage = (id, body) => { // rm ?
 
 export const deleteInspirationDb = params => { // delete an inspiration
   return fetch(`${api}/inspirations/${params.id}`, { method: 'delete' })
+// AUTHENTICATION
+export const sendSignUp = (params) =>
+  postJson(`${api}/users`, params)
+    .then(res => res.json())
+
     .then(res => res.json())
 }
