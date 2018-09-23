@@ -5,7 +5,7 @@ export const api = 'http://localhost:5300'
 const postJson = (url, content) => fetch(url, {
   method: 'post',
   headers: {
-    // 'X-Access-Token': localStorage.token,
+    'X-Access-Token': localStorage.token,
     'Content-Type': 'application/json'
   },
   // credentials: 'include',
