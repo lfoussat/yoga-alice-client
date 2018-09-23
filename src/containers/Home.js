@@ -122,8 +122,7 @@ class Home extends Component {
         <div className="parallax"></div>
         <section>
           <h2 style={{ marginTop: '50px' }}>Inspirations</h2>
-          <Grid centered doubling columns={4} id='inspiration-bloc'>
-
+          <Grid doubling columns={4} id='inspiration-bloc'> {/* centered */}
             <Grid id="inspirations">
               {this.props.inspirations
                 .sort((a, b) => b.createdAt - a.createdAt)

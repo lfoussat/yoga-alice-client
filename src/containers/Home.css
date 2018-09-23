@@ -195,6 +195,10 @@ figure.diapo {
   font-size: 42px;
 }
 
+.fas {
+    margin-left: 48% !important;
+}
+
 div#inspirations {
   padding: 0;
 }
