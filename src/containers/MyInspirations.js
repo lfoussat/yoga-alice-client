@@ -5,7 +5,7 @@ import Footer from '../components/Footer.js'
 import { Container, Grid, Modal, Form } from 'semantic-ui-react'
 import { getAllInspirations, sendInspirationDb } from '../api.js'
 import { actions } from '../store.js'
-import { Link, navigate } from '@reach/router'
+import { Link, navigate, Redirect } from '@reach/router'
 import './InspirationsDisplay.css'
 import './MyInspirations.css'
 
@@ -16,6 +16,8 @@ class MyInspirations extends Component {
   }
 
   render () {
+    if (!localStorage.token) return <Redirect noThrow to='/sign-in' />
+
     return (
       <React.Fragment>
         <Container fluid>
