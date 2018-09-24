@@ -23,7 +23,7 @@ class Courses extends Component {
             mobile={16}
             tablet={16}
             computer={8} className="scrolled-text">
-            <h1>Cours</h1>
+            <h1 style={{ paddingTop: '110px' }}>Cours</h1>
             <p>Je propose un yoga intuitif et bienveillant,
               inspiré de mes différentes pratiques ( vinyasa, shiatsu, qi gong, mindfullness) </p>
             <p>Mes cours sont basés sur les principes fondamentaux de l'énergétique chinoise

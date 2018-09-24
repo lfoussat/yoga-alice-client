@@ -10,6 +10,13 @@ import './Home.css'
 import { actions } from '../store.js'
 import { api, getAllInspirations } from '../api.js'
 
+const textMosaiq = {
+  display: 'flex',
+  flex: '1 1',
+  flexDirection: 'column',
+  justifyContent: 'center'
+}
+
 class Home extends Component {
   animateCarousel = () => {
     if (this.props.currentSlide === this.props.mySlides.length - 1) {
@@ -74,11 +81,17 @@ class Home extends Component {
         <section className="mosaiq">
           <Grid>
             <Grid.Column mobile={16} tablet={16} computer={8}>
-              <figure className="diapo">
-                <img src={`${api}/images/cours-cadre.jpg`} alt='informations stages' />
-              </figure>
+              <div id='testImg' style={{
+                backgroundImage: `url(${api}/images/cours-cadre.jpg)`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                minHeight: '600px'
+              }}></div>
+              {/* <figure className="diapo">
+                              <img src={`${api}/images/cours-cadre.jpg`} alt='informations stages' />
+                            </figure> */}
             </Grid.Column>
-            <Grid.Column mobile={16} tablet={16} computer={8}>
+            <Grid.Column mobile={16} tablet={16} computer={8} style={textMosaiq} >
               <div className="text" id="cours">
                 <article className="txtCenter">
                   <h2>Stages</h2>
@@ -93,7 +106,7 @@ class Home extends Component {
             </Grid.Column>
           </Grid>
           <Grid>
-            <Grid.Column mobile={16} tablet={16} computer={8}>
+            <Grid.Column mobile={16} tablet={16} computer={8} style={textMosaiq}>
               <div className="text" id="stages">
                 <article className="txtCenter">
                   <h2>Shiatsu</h2>
@@ -112,9 +125,15 @@ class Home extends Component {
               </div>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={16} computer={8}>
-              <figure className="diapo">
+              <div id='testImg' style={{
+                backgroundImage: `url(${api}/images/stage-session-cadre.jpg)`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                minHeight: '600px'
+              }}></div>
+              {/* <figure className="diapo">
                 <img src={`${api}/images/stage-session-cadre.jpg`} alt='informations shiatsu' />
-              </figure>
+              </figure> */}
             </Grid.Column>
           </Grid>
         </section>
