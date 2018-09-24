@@ -28,7 +28,7 @@
   height: 150px;
   background-repeat: no-repeat;
   margin-top: -55px;
-  margin-left: 2%;
+  margin-left: 15%;
 }
 
 #forme-parallax-2 {
@@ -39,7 +39,7 @@
   height: 100px;
   background-repeat: no-repeat;
   margin-top: -50px;
-  margin-left: 88%;
+  margin-left: 70%;
 }
 
 #forme-parallax-3 {
@@ -64,6 +64,8 @@
 
 #about_me { /* à vérifier */
   text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 
 .about_me_text {
@@ -89,6 +91,11 @@ figure.diapo img {
 #about_me img {
   width: 100%;
   height: 100%;
+}
+
+.mosaiq {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .text {
@@ -158,6 +165,7 @@ figure.diapo {
 
 .eight.wide.computer.sixteen.wide.mobile.sixteen.wide.tablet.column {
   padding-left: 0;
+  padding: 0;
 }
 
 .inspiration p {
@@ -168,7 +176,7 @@ figure.diapo {
 }
 
 #see-all-inspi p {
-  margin: 0;
+  margin: auto;
 }
 
 #avis p:nth-child(2) {
@@ -201,6 +209,7 @@ figure.diapo {
 
 div#inspirations {
   padding: 0;
+  width: 100%;
 }
 
 #inspiration-bloc h2 {
