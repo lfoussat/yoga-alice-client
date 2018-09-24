@@ -23,7 +23,7 @@ class YogaAlice extends Component {
             mobile={16}
             tablet={16}
             computer={8} className="scrolled-text">
-            <h1>Yoga Alice</h1>
+            <h1 style={{ paddingTop: '110px' }}>Yoga Alice</h1>
             <p>Bonjour, je m’appelle Alice. Je suis professeur de yoga certifiée et praticienne en shiatsu traditionnel.</p>
             <p>Je propose des cours de yoga en groupe ou en individuel,
             des soins shiatsus et des accompagnement holistique dans la gestion du stress. </p>

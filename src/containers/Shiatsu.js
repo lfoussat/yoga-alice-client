@@ -22,7 +22,7 @@ class Shiatsu extends Component {
             mobile={16}
             tablet={16}
             computer={8} className="scrolled-text">
-            <h1>Shiatsu</h1>
+            <h1 style={{ paddingTop: '110px' }}>Shiatsu</h1>
             <p>Je suis diplômée en shiatsu traditionnel auprès de Bernard Bouheret.</p>
             <p>Je vous reçois donc à mon domicile, 60 euros la séance de shiatsu (prévoyez 1h30 sur place) :</p>
             <p>Le shiatsu est une technique manuelle japonaise favorisant la bonne circulation énergétique dans le corps. Il est particulièrement recommandé en cas :</p>
