@@ -4,6 +4,7 @@ import AdminHeader from '../components/AdminHeader.js'
 import './MyProfile.css'
 import { actions } from '../store.js'
 import { sendSignUp } from '../api.js'
+import { Redirect } from '@reach/router'
 
 const getFormBody = event => {
   event.preventDefault()
@@ -30,6 +31,7 @@ const updateProfile = (event) => {
 }
 
 const MyProfile = ({ profile, errors }) => {
+  if (!localStorage.token) return <Redirect noThrow to='/sign-in' />
   let email = ''
 
   return (
