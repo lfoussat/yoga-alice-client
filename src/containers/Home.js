@@ -11,10 +11,10 @@ import { actions } from '../store.js'
 import { api, getAllInspirations } from '../api.js'
 
 const textMosaiq = {
-    display: 'flex',
-    flex: '1 1',
-    flexDirection: 'column',
-    justifyContent: 'center',
+  display: 'flex',
+  flex: '1 1',
+  flexDirection: 'column',
+  justifyContent: 'center'
 }
 
 class Home extends Component {
@@ -87,9 +87,9 @@ class Home extends Component {
                 backgroundSize: 'cover',
                 minHeight: '600px'
               }}></div>
-              {/*<figure className="diapo">
+              {/* <figure className="diapo">
                               <img src={`${api}/images/cours-cadre.jpg`} alt='informations stages' />
-                            </figure>*/}
+                            </figure> */}
             </Grid.Column>
             <Grid.Column mobile={16} tablet={16} computer={8} style={textMosaiq} >
               <div className="text" id="cours">
@@ -126,14 +126,14 @@ class Home extends Component {
             </Grid.Column>
             <Grid.Column mobile={16} tablet={16} computer={8}>
               <div id='testImg' style={{
-                  backgroundImage: `url(${api}/images/stage-session-cadre.jpg)`,
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover',
-                  minHeight: '600px'
-                }}></div>
-              {/*<figure className="diapo">
+                backgroundImage: `url(${api}/images/stage-session-cadre.jpg)`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                minHeight: '600px'
+              }}></div>
+              {/* <figure className="diapo">
                 <img src={`${api}/images/stage-session-cadre.jpg`} alt='informations shiatsu' />
-              </figure>*/}
+              </figure> */}
             </Grid.Column>
           </Grid>
         </section>

@@ -64,7 +64,7 @@
 
 #about_me { /* à vérifier */
   text-align: center;
-  margin-top: 0rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
@@ -164,7 +164,7 @@ figure.diapo {
 }
 
 .eight.wide.computer.sixteen.wide.mobile.sixteen.wide.tablet.column {
-  padding-left: 0;
+  /* padding-left: 0; */
   padding: 0;
 }
 
