@@ -27,11 +27,12 @@ class YogaAlice extends Component {
             <p>Bonjour, je m’appelle Alice. Je suis professeur de yoga certifiée et praticienne en shiatsu traditionnel.</p>
             <p>Je propose des cours de yoga en groupe ou en individuel,
             des soins shiatsus et des accompagnement holistique dans la gestion du stress. </p>
+            <p>Mon envie ? Révéler l'intelligence naturelle de votre corps, et vous faire prendre conscience de vos possibilités infinies.</p>
             <p>Après plusieurs années de pratique personnelle auprès de Mohammed Ismael
             (<a href='http://www.yogainparis.com/' target='_blank' rel="noopener noreferrer">http://www.yogainparis.com/</a>),
             je me suis formée comme professeur chez Stillflowing yoga auprès de Gemma Mallol
             (<a href='http://www.stillflowingyogateachertraining.com' target='_blank' rel="noopener noreferrer">http://www.stillflowingyogateachertraining.com</a>) en 2015.</p>
-            <p>Je suis diplômé en shiatsu traditionnel de l'école de Bernard Bouheret,
+            <p>Je suis diplômé en shiatsu traditionnel de l'école de Bernard Bouheret (<a href='https://www.shiatsu-est.org/bernard-bouheret' target='_blank' rel="noopener noreferrer">https://www.shiatsu-est.org/bernard-bouheret</a>),
             je pratique assidûment la méditation et le gi gong. </p>
             <p><Link to='/cours' className='contactLink'>En savoir plus sur mes cours</Link><br/>
               <Link to='/shiatsu' className='contactLink'>En savoir plus sur le shiatsu</Link><br/>
