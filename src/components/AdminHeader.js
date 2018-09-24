@@ -24,7 +24,7 @@ const AdminHeader = () =>
     </div>
     <nav id="mainNav">
       <Link to='/my-inspirations'><Icon name='file' />My inspirations</Link>
-      <Link to='/my-profile'><Icon name='user' />My profile</Link>
+      <Link to='/profile'><Icon name='user' />My profile</Link>
       <Link to='/sign-in' onClick={logout}><Icon name='user times' />Log out</Link>
     </nav>
     <div id="burgerBtn">
@@ -34,7 +34,7 @@ const AdminHeader = () =>
       <a id="closeNavBtn" onClick={closeNav}>&times;</a>
       <nav className="overlay-content">
         <Link to='/my-inspirations'><Icon name='file' />My inspirations</Link>
-        <Link to='/my-profile'><Icon name='user' />My profile</Link>
+        <Link to='/profile'><Icon name='user' />My profile</Link>
         <Link to='/sign-in' onClick={logout}><Icon name='user times' />Log out</Link>
       </nav>
     </div>
