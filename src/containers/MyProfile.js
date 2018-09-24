@@ -47,55 +47,55 @@ const MyProfile = ({ profile, errors }) => {
               updateProfile(e)
             }
           }}>
-              <div className='field'>
-                <label>E-mail adress</label>
-                <Form.Input
-                  name='email'
-                  fluid
-                  icon='user'
-                  iconPosition='left'
-                  type='email'
-                  value={profile.email || ''}
-                  onChange={e => {
-                    email = e.target.value
-                    actions.updateProfile(email)
-                  }}
-                />
-              </div>
-              <div className='field'>
-                <label> Password </label>
-                <Form.Input
-                  fluid
-                  name='password'
-                  icon='lock'
-                  iconPosition='left'
-                  placeholder='Type your password'
-                  type='password'
-                  minLength='6'
-                  maxLength='18'
-                />
-              </div>
-              <div className='field'>
-                <label>Confirm your password</label>
-                <Form.Input
-                  fluid
-                  name='passwordBis'
-                  icon='lock'
-                  iconPosition='left'
-                  placeholder='Confirm your password'
-                  type='password'
-                  minLength='6'
-                  maxLength='18'
-                />
-              </div>
-              <Button fluid size='large'>
+            <div className='field'>
+              <label>E-mail adress</label>
+              <Form.Input
+                name='email'
+                fluid
+                icon='user'
+                iconPosition='left'
+                type='email'
+                value={profile.email || ''}
+                onChange={e => {
+                  email = e.target.value
+                  actions.updateProfile(email)
+                }}
+              />
+            </div>
+            <div className='field'>
+              <label> Password </label>
+              <Form.Input
+                fluid
+                name='password'
+                icon='lock'
+                iconPosition='left'
+                placeholder='Type your password'
+                type='password'
+                minLength='6'
+                maxLength='18'
+              />
+            </div>
+            <div className='field'>
+              <label>Confirm your password</label>
+              <Form.Input
+                fluid
+                name='passwordBis'
+                icon='lock'
+                iconPosition='left'
+                placeholder='Confirm your password'
+                type='password'
+                minLength='6'
+                maxLength='18'
+              />
+            </div>
+            <Button fluid size='large'>
                 Save Changes
-              </Button>
-              { errors.profile ? <div className='ui message'>{errors.profile}</div> : undefined }
+            </Button>
+            { errors.profile ? <div className='ui message'>{errors.profile}</div> : undefined }
           </Form>
         </Grid.Column>
       </Grid>
-      </Container>
+    </Container>
   )
 }
 

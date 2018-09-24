@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Grid, Segment, Message } from 'semantic-ui-react'
+import { Button, Form, Grid, Message } from 'semantic-ui-react'
 
 const AuthForm = ({ headerMessage, actionName, onSubmit, error, children }) => (
   <div className='AuthForm'>
