@@ -73,7 +73,7 @@ class Home extends Component {
               développe son intuition et son mouvement naturel. </p>
               <p>Mon envie ? Révéler l'intelligence naturelle de votre corps,
               et vous faire prendre conscience de vos possibilités infinies.</p>
-              <Button>En savoir plus</Button>
+              <Link to='/cours'><Button>En savoir plus</Button></Link>
             </div>
           </Grid>
         </section>
@@ -161,8 +161,8 @@ class Home extends Component {
           <h2 id='contact'>Me contacter</h2>
           <p id='contactText'>Si vous avez la moindre question concernant les cours, les stages, ou le shiatsu à me poser,
           n'hésitez pas à me contacter par email ou via Facebook. Je vous répondrai au plus vite.</p>
-          <Button className='contactButton'><Icon name='facebook f' />Facebook</Button>
-          <Button className='contactButton'><Icon name='mail' />Email</Button>
+          <a href="https://www.facebook.com/alice.yoga.shiatsu/"><Button className='contactButton'><Icon name='facebook f' />Facebook</Button></a>
+          <a href="mailto:alice.ollagnon@gmail.com"><Button className='contactButton'><Icon name='mail' />Email</Button></a>
           <BackToTopBtn />
         </section>
         <Footer />
