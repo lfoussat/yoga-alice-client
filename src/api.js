@@ -11,6 +11,12 @@ const postJson = (url, content) => fetch(url, {
   body: JSON.stringify(content)
 })
 
+// Home
+
+export const getHome = () => {
+  return fetch(`${api}/fo/home`)
+    .then(res => res.json())
+}
 // INSPIRATIONS
 export const getAllInspirations = () => { // get all inspirations
   return fetch(`${api}/fo/inspirations`)
