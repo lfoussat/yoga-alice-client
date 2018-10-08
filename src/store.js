@@ -15,7 +15,10 @@ const initialState = {
   errors: {},
   profile: {
     email: localStorage.email
-  }
+  },
+  blocs: [],
+  quotation: [],
+  contactHome: {}
 }
 
 const reducer = (state, action) => {
