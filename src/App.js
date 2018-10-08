@@ -11,6 +11,7 @@ import Stages from './containers/Stages.js'
 import Contact from './containers/Contact.js'
 import MyInspirations from './containers/MyInspirations.js'
 import InspirationEditor from './containers/InspirationEditor.js'
+import HomeEditor from './containers/HomeEditor.js'
 import Authentication from './containers/Authentication.js'
 import MyProfile from './containers/MyProfile.js'
 import './App.css'
@@ -41,6 +42,7 @@ class App extends Component {
         <MyInspirations {...this.state} remove path='/my-inspirations/:id/remove' />
         <MyInspirations {...this.state} new path='/my-inspirations/new' />
         <InspirationEditor {...this.state} path='/inspirations/form/:id' />
+        <HomeEditor {...this.state} path='/edit/home' />
         <Authentication {...this.state} path='/sign-in' />
         <Authentication {...this.state} signUp path='/sign-up' />
         <MyProfile {...this.state} path='/profile' />
