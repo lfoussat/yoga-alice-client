@@ -8,7 +8,7 @@ import InspirationCard from '../components/InspirationCard.js'
 import { Link } from '@reach/router'
 import './Home.css'
 import { actions } from '../store.js'
-import { api, getAllInspirations } from '../api.js'
+import { api, getAllInspirations, getHome } from '../api.js'
 
 const textMosaiq = {
   display: 'flex',
