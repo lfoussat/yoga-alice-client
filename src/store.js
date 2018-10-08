@@ -22,6 +22,12 @@ const initialState = {
 }
 
 const reducer = (state, action) => {
+  if (action.type === 'LOAD_CAROUSEL') {
+    return {
+      ...state,
+      mySlides: action.carousel
+    }
+  }
   if (action.type === 'LOAD_INSPIRATIONS') {
     return {
       ...state,
@@ -110,6 +116,7 @@ const updateDatabase = store => next => async action => {
 export const store = createStore(reducer, initialState, applyMiddleware(updateDatabase))
 
 export const actions = {
+  loadCarousel: carousel => store.dispatch({ type: 'LOAD_CAROUSEL', carousel }),
   loadInspirations: inspirations => store.dispatch({ type: 'LOAD_INSPIRATIONS', inspirations }),
   loadInspiration: inspiration => store.dispatch({ type: 'LOAD_INSPIRATION', inspiration }),
   loadCurrentImageUrl: imageUrl => store.dispatch({ type: 'LOAD_CURRENT_IMAGE_URL', imageUrl }),
