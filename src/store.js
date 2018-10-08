@@ -35,6 +35,13 @@ const reducer = (state, action) => {
       blocs: action.blocs
     }
   }
+
+  if (action.type === 'LOAD_QUOTATIONS') {
+    return {
+      ...state,
+      quotations: action.quotations
+    }
+  }
   if (action.type === 'LOAD_INSPIRATIONS') {
     return {
       ...state,
@@ -125,6 +132,7 @@ export const store = createStore(reducer, initialState, applyMiddleware(updateDa
 export const actions = {
   loadCarousel: carousel => store.dispatch({ type: 'LOAD_CAROUSEL', carousel }),
   loadHomeBlocs: blocs => store.dispatch({ type: 'LOAD_BLOCS', blocs }),
+  loadQuotations: quotations => store.dispatch({ type: 'LOAD_QUOTATIONS', quotations }),
   loadInspirations: inspirations => store.dispatch({ type: 'LOAD_INSPIRATIONS', inspirations }),
   loadInspiration: inspiration => store.dispatch({ type: 'LOAD_INSPIRATION', inspiration }),
   loadCurrentImageUrl: imageUrl => store.dispatch({ type: 'LOAD_CURRENT_IMAGE_URL', imageUrl }),
