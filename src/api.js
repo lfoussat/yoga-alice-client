@@ -27,6 +27,10 @@ export const getHomeForBO = () => {
     .then(res => res.json())
 }
 
+export const updateHome = () => {
+  console.log('update')
+}
+
 // INSPIRATIONS
 export const getAllInspirations = () => { // get all inspirations
   return fetch(`${api}/fo/inspirations`)
