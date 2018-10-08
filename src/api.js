@@ -17,6 +17,16 @@ export const getHome = () => {
   return fetch(`${api}/fo/home`)
     .then(res => res.json())
 }
+
+export const getHomeForBO = () => {
+  console.log('gethomeforbo route')
+  return fetch(`${api}/bo/home`,
+    {
+      headers: { 'X-Access-Token': localStorage.token }
+    })
+    .then(res => res.json())
+}
+
 // INSPIRATIONS
 export const getAllInspirations = () => { // get all inspirations
   return fetch(`${api}/fo/inspirations`)
