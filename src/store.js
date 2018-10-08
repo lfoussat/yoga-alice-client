@@ -42,6 +42,14 @@ const reducer = (state, action) => {
       quotations: action.quotations
     }
   }
+
+  if (action.type === 'LOAD_CONTACT_HOME') {
+    return {
+      ...state,
+      contactHome: action.contactElement
+    }
+  }
+
   if (action.type === 'LOAD_INSPIRATIONS') {
     return {
       ...state,
@@ -132,6 +140,7 @@ export const store = createStore(reducer, initialState, applyMiddleware(updateDa
 export const actions = {
   loadCarousel: carousel => store.dispatch({ type: 'LOAD_CAROUSEL', carousel }),
   loadHomeBlocs: blocs => store.dispatch({ type: 'LOAD_BLOCS', blocs }),
+  loadContactHome: contactElement => store.dispatch({ type: 'LOAD_CONTACT_HOME', contactElement }),
   loadQuotations: quotations => store.dispatch({ type: 'LOAD_QUOTATIONS', quotations }),
   loadInspirations: inspirations => store.dispatch({ type: 'LOAD_INSPIRATIONS', inspirations }),
   loadInspiration: inspiration => store.dispatch({ type: 'LOAD_INSPIRATION', inspiration }),
