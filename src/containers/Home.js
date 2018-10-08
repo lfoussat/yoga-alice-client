@@ -73,7 +73,7 @@ class Home extends Component {
               développe son intuition et son mouvement naturel. </p>
               <p>Mon envie ? Révéler l'intelligence naturelle de votre corps,
               et vous faire prendre conscience de vos possibilités infinies.</p>
-              <Button>En savoir plus</Button>
+              <Link to='/cours'><Button>En savoir plus</Button></Link>
             </div>
           </Grid>
         </section>
