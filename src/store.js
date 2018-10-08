@@ -28,6 +28,13 @@ const reducer = (state, action) => {
       mySlides: action.carousel
     }
   }
+
+  if (action.type === 'LOAD_BLOCS') {
+    return {
+      ...state,
+      blocs: action.blocs
+    }
+  }
   if (action.type === 'LOAD_INSPIRATIONS') {
     return {
       ...state,
@@ -117,6 +124,7 @@ export const store = createStore(reducer, initialState, applyMiddleware(updateDa
 
 export const actions = {
   loadCarousel: carousel => store.dispatch({ type: 'LOAD_CAROUSEL', carousel }),
+  loadHomeBlocs: blocs => store.dispatch({ type: 'LOAD_BLOCS', blocs }),
   loadInspirations: inspirations => store.dispatch({ type: 'LOAD_INSPIRATIONS', inspirations }),
   loadInspiration: inspiration => store.dispatch({ type: 'LOAD_INSPIRATION', inspiration }),
   loadCurrentImageUrl: imageUrl => store.dispatch({ type: 'LOAD_CURRENT_IMAGE_URL', imageUrl }),
