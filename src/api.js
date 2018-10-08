@@ -8,7 +8,6 @@ const postJson = (url, content) => fetch(url, {
     'X-Access-Token': localStorage.token,
     'Content-Type': 'application/json'
   },
-  // credentials: 'include',
   body: JSON.stringify(content)
 })
 
@@ -23,7 +22,6 @@ export const getAllInspirationsForBO = () => {
     {
       headers: { 'X-Access-Token': localStorage.token }
     })
-    // .then(inspirations => inspirations.json())
     .then(res => res.json())
 }
 
