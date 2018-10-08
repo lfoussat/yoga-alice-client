@@ -27,8 +27,15 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    getAllInspirations('fo')
-      .then(actions.loadInspirations)
+    getHome()
+      .then(home => {
+        actions.loadCarousel(home.carousel)
+        actions.loadQuotations(home.quotations)
+        actions.loadHomeBlocs(home.blocs)
+        actions.loadContactHome(home.contact)
+      })
+
+    getAllInspirations().then(actions.loadInspirations)
 
     setInterval(this.animateCarousel, 9000)
   }
