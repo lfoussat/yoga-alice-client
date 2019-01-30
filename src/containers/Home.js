@@ -158,11 +158,33 @@ class Home extends Component {
           <p>Julie, Cours du mardi</p>
         </div>
         <section id="contact-background">
-          <h2 id='contact'>Me contacter</h2>
-          <p id='contactText'>Si vous avez la moindre question concernant les cours, les stages, ou le shiatsu à me poser,
-          n'hésitez pas à me contacter par email ou via Facebook. Je vous répondrai au plus vite.</p>
-          <a href="https://www.facebook.com/alice.yoga.shiatsu/"><Button className='contactButton'><Icon name='facebook f' />Facebook</Button></a>
-          <a href="mailto:alice.ollagnon@gmail.com"><Button className='contactButton'><Icon name='mail' />Email</Button></a>
+          <h2 id="contact">Me contacter</h2>
+          <p id="contactText">
+            Si vous avez la moindre question concernant les cours, les stages,
+            ou le shiatsu à me poser, n'hésitez pas à me contacter par email ou
+            via Facebook. Je vous répondrai au plus vite.
+          </p>
+          <a
+            href="https://www.facebook.com/alice.yoga.shiatsu/"
+            target="_blank"
+          >
+            <Button className="contactButton">
+              <Icon name="facebook f" />
+              Facebook
+            </Button>
+          </a>
+          <a href="https://www.instagram.com/aliceollagnon/" target="_blank">
+            <Button className="contactButton">
+              <Icon name="instagram" />
+              Instagram
+            </Button>
+          </a>
+          <a href="mailto:alice.ollagnon@gmail.com">
+            <Button className="contactButton">
+              <Icon name="mail" />
+              Email
+            </Button>
+          </a>
           <BackToTopBtn />
         </section>
         <Footer />
