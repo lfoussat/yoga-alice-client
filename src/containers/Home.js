@@ -26,13 +26,13 @@ class Home extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     getAllInspirations('fo').then(actions.loadInspirations)
 
     setInterval(this.animateCarousel, 9000)
   }
 
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
@@ -231,13 +231,18 @@ class Home extends Component {
           <a
             href="https://www.facebook.com/alice.yoga.shiatsu/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Button className="contactButton">
               <Icon name="facebook f" />
               Facebook
             </Button>
           </a>
-          <a href="https://www.instagram.com/aliceollagnon/" target="_blank">
+          <a
+            href="https://www.instagram.com/aliceollagnon/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button className="contactButton">
               <Icon name="instagram" />
               Instagram

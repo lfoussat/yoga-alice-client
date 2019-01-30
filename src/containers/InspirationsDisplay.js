@@ -7,11 +7,11 @@ import { getAllInspirations } from '../api.js'
 import { actions } from '../store.js'
 
 class InspirationsDisplay extends Component {
-  componentDidMount() {
+  componentDidMount () {
     getAllInspirations().then(actions.loadInspirations)
   }
 
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />

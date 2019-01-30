@@ -9,11 +9,11 @@ import { Link, navigate, Redirect } from '@reach/router'
 import './MyInspirations.css'
 
 class MyInspirations extends Component {
-  componentDidMount() {
+  componentDidMount () {
     getAllInspirationsForBO().then(actions.loadInspirations)
   }
 
-  render() {
+  render () {
     if (!localStorage.token) return <Redirect noThrow to="/sign-in" />
 
     return (
@@ -38,14 +38,14 @@ class MyInspirations extends Component {
               {this.props.inspirations.length === 0
                 ? 'No inspiration registered yet.'
                 : this.props.inspirations.map(i => (
-                    <AdminInspirationCard
-                      key={i.id}
-                      inspiration={i}
-                      deleteInspiration={actions.deleteInspiration}
-                      remove={this.props.remove}
-                      selectedId={Number(this.props.id)}
-                    />
-                  ))}
+                  <AdminInspirationCard
+                    key={i.id}
+                    inspiration={i}
+                    deleteInspiration={actions.deleteInspiration}
+                    remove={this.props.remove}
+                    selectedId={Number(this.props.id)}
+                  />
+                ))}
             </Grid>
           </Grid>
           <Footer />

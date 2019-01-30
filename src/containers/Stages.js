@@ -5,7 +5,7 @@ import { Container, Grid, Icon } from 'semantic-ui-react'
 import './Contact.css'
 
 class Stages extends Component {
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
@@ -32,6 +32,7 @@ class Stages extends Component {
                 <a
                   href="https://www.larbreauxetoiles.fr/evenements/yoga-et-meditation-avec-alice-ollagnon-mars-2019/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contactLink"
                 >
                   en cliquant ici
@@ -44,6 +45,7 @@ class Stages extends Component {
                 <a
                   href="https://www.facebook.com/alice.yoga.shiatsu/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contactLink"
                 >
                   Yoga Alice
@@ -55,6 +57,7 @@ class Stages extends Component {
                 <a
                   href="https://www.instagram.com/aliceollagnon/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contactLink"
                 >
                   aliceollagnon

@@ -1,8 +1,8 @@
 import React from 'react'
 import SignIn from '../components/SignIn.js'
-import SignUp from '../components/SignUp.js'
+// import SignUp from '../components/SignUp.js'
 import { Redirect, navigate } from '@reach/router'
-import { sendLogin, sendSignUp } from '../api'
+import { sendLogin } from '../api' // sendSignUp
 import { actions } from '../store'
 
 const getFormBody = event => {
@@ -15,18 +15,18 @@ const getFormBody = event => {
     }, {})
 }
 
-const signUp = event => {
-  sendSignUp(getFormBody(event)).then(({ token, email, error }) => {
-    if (error) {
-      actions.showError('signup', error)
-    } else {
-      localStorage.token = token || ''
-      localStorage.email = email || ''
-      actions.updateProfile(email)
-      navigate('/my-inspirations')
-    }
-  })
-}
+// const signUp = event => {
+//   sendSignUp(getFormBody(event)).then(({ token, email, error }) => {
+//     if (error) {
+//       actions.showError('signup', error)
+//     } else {
+//       localStorage.token = token || ''
+//       localStorage.email = email || ''
+//       actions.updateProfile(email)
+//       navigate('/my-inspirations')
+//     }
+//   })
+// }
 
 const login = event => {
   sendLogin(getFormBody(event)).then(({ token, email, error }) => {

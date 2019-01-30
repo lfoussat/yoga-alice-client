@@ -8,11 +8,11 @@ import { getAllInspirations } from '../api.js'
 import '../containers/Contact.css'
 
 class SiteMap extends Component {
-  componentDidMount() {
+  componentDidMount () {
     getAllInspirations('fo').then(actions.loadInspirations)
   }
 
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />

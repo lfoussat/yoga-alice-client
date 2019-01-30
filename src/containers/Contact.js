@@ -5,7 +5,7 @@ import { Container, Grid, Icon } from 'semantic-ui-react'
 import './Contact.css'
 
 class Contact extends Component {
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
@@ -32,6 +32,7 @@ class Contact extends Component {
                 <a
                   href="https://www.facebook.com/alice.yoga.shiatsu/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contactLink"
                 >
                   Yoga Alice
@@ -43,6 +44,7 @@ class Contact extends Component {
                 <a
                   href="https://www.instagram.com/aliceollagnon/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="contactLink"
                 >
                   aliceollagnon

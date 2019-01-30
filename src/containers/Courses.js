@@ -6,7 +6,7 @@ import './Courses.css'
 import { api } from '../api.js'
 
 class Courses extends Component {
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
@@ -76,7 +76,11 @@ class Courses extends Component {
                   <Table.Cell>100 rue du Théâtre, métro Commerce</Table.Cell>
                   <Table.Cell>
                     Réservation sur le site de{' '}
-                    <a href="https://cmonyoga.com/le-planning/" target="_blank">
+                    <a
+                      href="https://cmonyoga.com/le-planning/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Cmonyoga
                     </a>
                   </Table.Cell>

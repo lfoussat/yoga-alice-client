@@ -7,11 +7,19 @@ const Footer = () => (
   <section>
     <div id="yogaAliceFooter">
       <div id="socialMedia">
-        <a href="https://www.facebook.com/alice.yoga.shiatsu/" target="_blank">
+        <a
+          href="https://www.facebook.com/alice.yoga.shiatsu/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon name="facebook f" />
           Yoga Alice sur Facebook
         </a>
-        <a href="https://www.instagram.com/aliceollagnon/" target="_blank">
+        <a
+          href="https://www.instagram.com/aliceollagnon/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon name="instagram" />
           aliceollagnon sur Instagram
         </a>
