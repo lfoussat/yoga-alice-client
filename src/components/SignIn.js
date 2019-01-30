@@ -9,12 +9,16 @@ const SignIn = ({ onSubmit, errors }) => (
     <AuthHeader />
     <AuthForm
       onSubmit={onSubmit}
-      headerMessage='Log-in to your account'
-      actionName='Login'>
-      New to us? <Link to='/sign-up'>Sign Up</Link>
-    </AuthForm>
-    { !errors.login ? undefined : <div className='ui message error centerError'>{errors.login}</div> }
+      headerMessage="Log-in to your account"
+      actionName="Login"
+    />
+    {!errors.login ? (
+      undefined
+    ) : (
+      <div className="ui message error centerError">{errors.login}</div>
+    )}
   </React.Fragment>
 )
+// New to us? <Link to='/sign-up'>Sign Up</Link>
 
 export default SignIn
