@@ -5,11 +5,11 @@ const initialState = {
   inspirations: [],
   inspiration: {},
   currentImageUrl: '',
-  mySlides: [ // à mettre en place
-    `${api}/images/yoga-alice-carr-5.jpg`,
-    `${api}/images/yoga-alice-carr-2.jpg`,
-    `${api}/images/yoga-alice-carr-3.jpg`,
-    `${api}/images/yoga-alice-carr-4.jpg`
+  mySlides: [
+    // à mettre en place
+    `${api}/images/yoga-alice-carr-5-test.jpg`,
+    `${api}/images/yoga-alice-carr-4-test.jpg`,
+    `${api}/images/yoga-alice-carr-3-test.jpg`
   ],
   currentSlide: 0,
   errors: {},
