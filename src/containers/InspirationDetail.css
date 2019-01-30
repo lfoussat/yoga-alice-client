@@ -26,5 +26,7 @@ p {
 .pText p {
   text-align: justify;
   padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 40px;
   white-space: pre-wrap;
 }
