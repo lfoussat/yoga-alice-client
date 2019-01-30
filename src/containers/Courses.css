@@ -1,0 +1,60 @@
+h1:first-child {
+  padding-top: 75px;
+}
+
+.container-fluid {
+  padding-left: 0;
+}
+
+.fixed-picture img {
+  position: fixed;
+  z-index: -10;
+}
+
+.scrolled-text {
+  text-align: justify;
+  max-height: 100vh;
+  overflow: scroll;
+  background: rgba(249, 248, 246, 0.5);
+  margin-bottom: 1em;
+  margin-top: -1em;
+}
+
+.scrolled-text button,
+.scrolled-text p,
+.scrolled-text table {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.scrolled-text button {
+  margin-left: 35px !important;
+  margin-bottom: 35px !important;
+}
+
+.scrolled-text h2 {
+  margin-top: 45px;
+  font-size: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+@media only screen and (max-width: 991px) {
+  .fixed-picture img {
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .fixed-picture img {
+    /* max-width: 50%; */
+    width: 50%;
+  }
+
+  #yogaAliceFooter {
+    margin-top: 0;
+  }
+}

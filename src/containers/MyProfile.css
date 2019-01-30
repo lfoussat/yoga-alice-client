@@ -1,0 +1,10 @@
+.UpdateUserAccount .ui.form .field {
+  width: 100%;
+}
+
+.ui.form .field .ui.input input,
+.ui.form .fields .field .ui.input input {
+  border: none;
+  border-bottom: 1px solid rgba(7, 7, 7, 0.6);
+  border-radius: 0;
+}

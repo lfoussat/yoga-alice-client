@@ -1,0 +1,13 @@
+#yogaAliceFooter {
+  background-color: #070707;
+  text-align: center;
+  padding: 35px 15px 35px 15px;
+}
+
+#yogaAliceFooter a,
+#yogaAliceFooter p {
+  font-size: 16px;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}

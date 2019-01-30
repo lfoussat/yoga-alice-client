@@ -1,0 +1,10 @@
+.ui.label > .icon {
+  margin: 0;
+}
+
+.ui.circular.label,
+.ui.circular.labels .label {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}

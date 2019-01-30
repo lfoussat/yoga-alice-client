@@ -1,0 +1,168 @@
+
+/***************** HEADER navigation *****************/
+
+/* Burger Navigation */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #43986a;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100vw;
+  text-align: center;
+}
+
+.overlay > a {
+  padding-top: -15px;
+}
+
+.overlay a,
+.overlay-content a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f9f8f6;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 1000;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ff6858;
+}
+
+/* Navigation - close btn */
+.overlay #closeNavBtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay #closeNavBtn:hover {
+  color: #f9f8f6;
+}
+
+/***************** END OF HEADER navigation *****************/
+
+/***************** HEADER navbar *****************/
+
+/* General - Fixed position */
+#yogaAliceHeader {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: #43986a;
+  display: block;
+  height: 60px;
+  padding: 0;
+  z-index: 20;
+  box-shadow: 0 1px 2px #00000047;
+}
+
+/* Logo */
+#yogaAliceLogo {
+  position: absolute;
+  line-height: 60px;
+  width: 350px;
+  text-align: left;
+  margin-left: 15px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5em;
+}
+
+#yogaAliceLogo a {
+  color: #f9f8f6;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+/* #yogaAliceLogo a:hover {
+  text-decoration: none;
+} */
+
+/* Navigation - open btn */
+#openNavBtn,
+#burgerBtn {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #f9f8f6;
+}
+
+#openNavBtn:hover,
+#burgerBtn:hover {
+  text-decoration: none;
+  color: #f9f8f6;
+}
+
+/* Main navigation */
+#mainNav {
+  text-align: right;
+  margin-right: 15px;
+  line-height: 60px;
+}
+
+#mainNav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f9f8f6;
+  display: inline;
+  transition: 0.3s;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 1000;
+}
+
+#mainNav a:hover,
+#mainNav a:focus {
+  color: #ff6858;
+}
+
+/***************** END OF HEADER navbar *****************/
+
+@media screen and (max-width: 978px) {
+  #mainNav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 978px) {
+  #burgerBtn {
+    display: none;
+  }
+
+  #burgerNav {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closeNavBtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/***************** END OF HEADER STYLE *****************/

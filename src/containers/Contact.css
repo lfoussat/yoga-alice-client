@@ -1,0 +1,29 @@
+.contactLink {
+  color: #43986a;
+}
+
+.contactLink:hover {
+  color: rgb(55, 216, 92);
+}
+
+.contactBackground {
+  background-image: url('http://localhost:5300/images/photo-contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+.contactBackgroundStages {
+  background-image: url('http://localhost:5300/images/stages-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+#contact-me {
+  margin: 50px 30px 50px 30px;
+  padding: 30px;
+  background: rgba(249, 248, 246, 0.7);
+}
