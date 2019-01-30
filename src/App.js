@@ -13,6 +13,7 @@ import MyInspirations from './containers/MyInspirations.js'
 import InspirationEditor from './containers/InspirationEditor.js'
 import Authentication from './containers/Authentication.js'
 import MyProfile from './containers/MyProfile.js'
+import SiteMap from './components/SiteMap.js'
 import './App.css'
 
 class App extends Component {
@@ -48,6 +49,7 @@ class App extends Component {
         <InspirationEditor {...this.state} path="/inspirations/form/:id" />
         <Authentication {...this.state} path="/sign-in" />
         <MyProfile {...this.state} path="/profile" />
+        <SiteMap {...this.state} path="/site-map" />
       </Router>
     )
   }

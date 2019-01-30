@@ -11,8 +11,7 @@ const Footer = () =>
         <Link to="/contact"><Icon name='mail' />Contact</Link>
       </div>
       <div id="footerLinks">
-        <Link to="/mentions-legales">Mentions légales</Link>
-        <Link to="/plan-du-site">Plan du site</Link>
+        <Link to="/site-map">Plan du site</Link>
       </div>
       <div id="coyright">
         <p>Copyright 2018 : Alice Olagnon</p>
