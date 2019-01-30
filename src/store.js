@@ -62,8 +62,13 @@ const reducer = (state, action) => {
     return {
       ...state,
       inspirations: [
-        ...state.inspirations.slice(0, state.inspirations.indexOf(action.inspirationContent)),
-        ...state.inspirations.slice(state.inspirations.indexOf(action.inspirationContent) + 1)
+        ...state.inspirations.slice(
+          0,
+          state.inspirations.indexOf(action.inspirationContent)
+        ),
+        ...state.inspirations.slice(
+          state.inspirations.indexOf(action.inspirationContent) + 1
+        )
       ]
     }
   }
@@ -104,15 +109,26 @@ const updateDatabase = store => next => async action => {
   }
 }
 
-export const store = createStore(reducer, initialState, applyMiddleware(updateDatabase))
+export const store = createStore(
+  reducer,
+  initialState,
+  applyMiddleware(updateDatabase)
+)
 
 export const actions = {
-  loadInspirations: inspirations => store.dispatch({ type: 'LOAD_INSPIRATIONS', inspirations }),
-  loadInspiration: inspiration => store.dispatch({ type: 'LOAD_INSPIRATION', inspiration }),
-  loadCurrentImageUrl: imageUrl => store.dispatch({ type: 'LOAD_CURRENT_IMAGE_URL', imageUrl }),
-  updateCurrentSlide: nextSlide => store.dispatch({ type: 'UPDATE_CURRENT_SLIDE', nextSlide }),
-  updateInspiration: inspirationContent => store.dispatch({ type: 'UPDATE_INSPIRATION', inspirationContent }),
-  deleteInspiration: inspirationContent => store.dispatch({ type: 'DELETE_INSPIRATION', inspirationContent }),
-  showError: (type, message) => store.dispatch({ type: 'UPDATE_ERROR', error: { type, message } }),
-  updateProfile: (profile) => store.dispatch({ type: 'UPDATE_PROFILE', profile })
+  loadInspirations: inspirations =>
+    store.dispatch({ type: 'LOAD_INSPIRATIONS', inspirations }),
+  loadInspiration: inspiration =>
+    store.dispatch({ type: 'LOAD_INSPIRATION', inspiration }),
+  loadCurrentImageUrl: imageUrl =>
+    store.dispatch({ type: 'LOAD_CURRENT_IMAGE_URL', imageUrl }),
+  updateCurrentSlide: nextSlide =>
+    store.dispatch({ type: 'UPDATE_CURRENT_SLIDE', nextSlide }),
+  updateInspiration: inspirationContent =>
+    store.dispatch({ type: 'UPDATE_INSPIRATION', inspirationContent }),
+  deleteInspiration: inspirationContent =>
+    store.dispatch({ type: 'DELETE_INSPIRATION', inspirationContent }),
+  showError: (type, message) =>
+    store.dispatch({ type: 'UPDATE_ERROR', error: { type, message } }),
+  updateProfile: profile => store.dispatch({ type: 'UPDATE_PROFILE', profile })
 }

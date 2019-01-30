@@ -17,7 +17,7 @@ import SiteMap from './components/SiteMap.js'
 import './App.css'
 
 class App extends Component {
-  constructor () {
+  constructor() {
     super()
     this.state = store.getState()
     store.subscribe(() => {
@@ -25,9 +25,6 @@ class App extends Component {
     })
   }
 
-  render () {
-    console.log(this.state.inspirations)
-    console.log(this.state.inspiration)
   render() {
     return (
       <Router>
