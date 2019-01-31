@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import { Container, Grid, Table, Button, Icon } from 'semantic-ui-react'
-import './Courses.css'
+import './Yoga.css'
 import { api } from '../api.js'
 
 class Shiatsu extends Component {

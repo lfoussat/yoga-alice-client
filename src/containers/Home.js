@@ -83,7 +83,7 @@ class Home extends Component {
         <section>
           <Grid>
             <div className="greenBanner colorAnimation" id="shiatsu">
-              <h2>Cours</h2>
+              <h2>Yoga</h2>
               <p>
                 Je propose un yoga intuitif et bienveillant, inspiré de mes
                 différentes pratiques ( vinyasa, shiatsu, qi gong,
@@ -104,7 +104,7 @@ class Home extends Component {
                 Mon envie ? Révéler l'intelligence naturelle de votre corps, et
                 vous faire prendre conscience de vos possibilités infinies.
               </p>
-              <Link to="/cours">
+              <Link to="/yoga">
                 <Button>En savoir plus</Button>
               </Link>
             </div>
@@ -133,7 +133,7 @@ class Home extends Component {
               computer={8}
               style={textMosaiq}
             >
-              <div className="text" id="cours">
+              <div className="text" id="yoga">
                 <article className="txtCenter">
                   <h2>Stages</h2>
                   <p>

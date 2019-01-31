@@ -19,11 +19,11 @@ const Header = () =>
     <nav id="mainNav">
       <Link to='/'>Accueil</Link>
       <Link to='/yoga-alice'>Yoga ALice</Link>
-      <Link to='/cours'>Cours</Link>
       <Link to='/shiatsu'>Shiatsu</Link>
       <Link to='/stages'>Stages</Link>
       <Link to='/inspirations'>Inspirations</Link>
       <Link to='/contact'>Contact</Link>
+      <Link to="/yoga">Yoga</Link>
     </nav>
     <div id="burgerBtn">
       <a title="Burger button" id="openNavBtn" onClick={openNav}>&#9776;</a>
@@ -33,11 +33,11 @@ const Header = () =>
       <nav className="overlay-content">
         <Link to='/'>Accueil</Link>
         <Link to='/yoga-alice'>Yoga ALice</Link>
-        <Link to='/cours'>Cours</Link>
         <Link to='/shiatsu'>Shiatsu</Link>
         <Link to='/stages'>Stages</Link>
         <Link to='/inspirations'>Inspirations</Link>
         <Link to='/contact'>Contact</Link>
+        <Link to="/yoga">Yoga</Link>
       </nav>
     </div>
   </header>

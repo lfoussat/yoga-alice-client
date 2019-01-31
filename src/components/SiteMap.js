@@ -30,8 +30,8 @@ class SiteMap extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/cours" className="contactLink">
-                Cours
+              <Link to="/yoga" className="contactLink">
+                Yoga
               </Link>
             </li>
             <li>

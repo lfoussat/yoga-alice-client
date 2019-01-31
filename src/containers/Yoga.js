@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import { Container, Grid, Table } from 'semantic-ui-react'
-import './Courses.css'
+import './Yoga.css'
 import { api } from '../api.js'
 
-class Courses extends Component {
+class Yoga extends Component {
   render () {
     return (
       <Container fluid>
@@ -20,7 +20,7 @@ class Courses extends Component {
           >
             <img
               src={`${api}/images/cours-ajout-1.jpg`}
-              alt="Cours de yoga d'Alice Olagnon"
+              alt="Cours de yoga d'Alice Ollagnon"
             />
           </Grid.Column>
           <Grid.Column
@@ -29,7 +29,7 @@ class Courses extends Component {
             computer={8}
             className="scrolled-text"
           >
-            <h1 style={{ paddingTop: '110px' }}>Cours</h1>
+            <h1 style={{ paddingTop: '110px' }}>Yoga</h1>
             <p>
               Je propose un yoga intuitif et bienveillant, inspiré de mes
               différentes pratiques ( vinyasa, shiatsu, qi gong, mindfullness){' '}
@@ -107,4 +107,4 @@ class Courses extends Component {
   }
 }
 
-export default Courses
+export default Yoga
