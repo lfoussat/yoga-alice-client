@@ -52,7 +52,7 @@ class SiteMap extends Component {
                 {this.props.inspirations
                   .sort((a, b) => b.createdAt - a.createdAt)
                   .map(i => (
-                    <li>
+                    <li key={i.id}>
                       <Link
                         to={`/inspirations/${i.id}`}
                         className="contactLink"

@@ -33,7 +33,7 @@ const Footer = () => (
       </div>
       <div id="coyright">
         <p>
-          Copyright 2019 : Alice Olagnon - Développement web : Louise Foussat
+          Copyright 2019 : Alice Ollagnon - Développement web : Louise Foussat
         </p>
       </div>
     </div>
