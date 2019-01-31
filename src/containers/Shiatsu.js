@@ -6,7 +6,7 @@ import './Yoga.css'
 import { api } from '../api.js'
 
 class Shiatsu extends Component {
-  render () {
+  render() {
     return (
       <Container fluid>
         <Header />

@@ -118,7 +118,7 @@ figure.diapo img {
 
 #about_me a,
 #stages a,
-#cours a {
+#yoga a {
   border-top: 1px solid rgba(185, 179, 174, 0.5);
   border-bottom: 1px solid rgba(185, 179, 174, 0.5);
   width: 100%;
@@ -142,8 +142,7 @@ figure.diapo img {
 
 #about_me a:hover,
 #stages a:hover,
-#cours a:hover,
-#shiatsu a:hover {
+#yoga a:hover {
   color: #43986a;
   border-color: #43986a;
 }

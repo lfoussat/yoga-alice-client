@@ -6,7 +6,7 @@ import './Yoga.css'
 import { api } from '../api.js'
 
 class Yoga extends Component {
-  render () {
+  render() {
     return (
       <Container fluid>
         <Header />
@@ -95,7 +95,7 @@ class Yoga extends Component {
             <p>Tarif : 1h30 - 90 euros</p>
             <p>Tarif à mon domicile : 1h - 55 euros</p>
             <h2>Les cours en entreprise</h2>
-            <p>
+            <p style={{ marginBottom: '110px' }}>
               Contactez moi pour un devis, je me ferai une joie de créer avec
               vous votre projet bien être au sein de votre entreprise.{' '}
             </p>

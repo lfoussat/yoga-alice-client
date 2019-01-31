@@ -20,7 +20,7 @@ const AdminHeader = () => (
   <header id="yogaAliceHeader">
     <div id="yogaAliceLogo">
       <img src={Logo} alt="logo Alice Ollagnon - yoga & shiatsu" />
-      <Link to="/my-inspirations">Alice Ollagnon - Admin</Link>
+      <Link to="/my-inspirations">Alice Ollagnon</Link>
     </div>
     <nav id="mainNav">
       <Link to="/my-inspirations">
