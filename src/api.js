@@ -1,6 +1,6 @@
 /* global fetch */
 
-export const api = 'https://alice-ollagnon-server.herokuapp.com'
+export const api = 'https://alice-ollagnon-server.herokuapp.com' //localhost:3000
 
 const postJson = (url, content) =>
   fetch(url, {
