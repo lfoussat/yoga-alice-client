@@ -69,13 +69,13 @@ class Home extends Component {
                   Mon souhait est d'offrir des cours créatifs et bienveillants
                   dans le respect des corps et des personnalités de chacun.
                 </p>
-                <Link to="/yoga-alice">En savoir plus</Link>
+                <Link to="/about-me">En savoir plus</Link>
               </div>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={16} computer={8}>
               <img
                 src={`${api}/images/alice-ollagnon.jpg`}
-                alt="Alice Olagnon"
+                alt="Alice Ollagnon"
               />
             </Grid.Column>
           </Grid>

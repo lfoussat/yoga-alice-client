@@ -19,8 +19,8 @@ const logout = () => {
 const AdminHeader = () =>
   <header id="yogaAliceHeader">
     <div id="yogaAliceLogo">
-      <img src={Logo} alt='logo Yoga Alice' />
-      <Link to='/my-inspirations'>Yoga ALice</Link>
+      <img src={Logo} alt="logo Alice Ollagnon - yoga & shiatsu" />
+      <Link to="/my-inspirations">Alice Ollagnon - Admin</Link>
     </div>
     <nav id="mainNav">
       <Link to='/my-inspirations'><Icon name='file' />My inspirations</Link>

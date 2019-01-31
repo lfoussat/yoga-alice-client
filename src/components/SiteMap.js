@@ -25,8 +25,8 @@ class SiteMap extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/yoga-alice" className="contactLink">
-                Yoga Alice
+              <Link to="/about-me" className="contactLink">
+                Alice
               </Link>
             </li>
             <li>

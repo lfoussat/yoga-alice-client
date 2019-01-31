@@ -13,16 +13,16 @@ const closeNav = () => {
 const Header = () =>
   <header id="yogaAliceHeader">
     <div id="yogaAliceLogo">
-      <img src={Logo} alt='logo Yoga Alice' />
-      <Link to='/'>Yoga ALice</Link>
+      <img src={Logo} alt="logo Alice Ollagnon - yoga & shiatsu" />
+      <Link to="/">Alice Ollagnon</Link>
     </div>
     <nav id="mainNav">
       <Link to='/'>Accueil</Link>
-      <Link to='/yoga-alice'>Yoga ALice</Link>
       <Link to='/shiatsu'>Shiatsu</Link>
       <Link to='/stages'>Stages</Link>
       <Link to='/inspirations'>Inspirations</Link>
       <Link to='/contact'>Contact</Link>
+      <Link to="/about-me">Alice</Link>
       <Link to="/yoga">Yoga</Link>
     </nav>
     <div id="burgerBtn">
@@ -32,11 +32,11 @@ const Header = () =>
       <a id="closeNavBtn" onClick={closeNav}>&times;</a>
       <nav className="overlay-content">
         <Link to='/'>Accueil</Link>
-        <Link to='/yoga-alice'>Yoga ALice</Link>
         <Link to='/shiatsu'>Shiatsu</Link>
         <Link to='/stages'>Stages</Link>
         <Link to='/inspirations'>Inspirations</Link>
         <Link to='/contact'>Contact</Link>
+        <Link to="/about-me">Alice</Link>
         <Link to="/yoga">Yoga</Link>
       </nav>
     </div>
