@@ -25,13 +25,13 @@ class SiteMap extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/yoga-alice" className="contactLink">
-                Yoga Alice
+              <Link to="/about-me" className="contactLink">
+                Alice
               </Link>
             </li>
             <li>
-              <Link to="/cours" className="contactLink">
-                Cours
+              <Link to="/yoga" className="contactLink">
+                Yoga
               </Link>
             </li>
             <li>
@@ -52,7 +52,7 @@ class SiteMap extends Component {
                 {this.props.inspirations
                   .sort((a, b) => b.createdAt - a.createdAt)
                   .map(i => (
-                    <li>
+                    <li key={i.id}>
                       <Link
                         to={`/inspirations/${i.id}`}
                         className="contactLink"

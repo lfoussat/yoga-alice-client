@@ -4,8 +4,8 @@ import { store } from './store.js'
 import Home from './containers/Home.js'
 import InspirationsDisplay from './containers/InspirationsDisplay.js'
 import InspirationDetail from './containers/InspirationDetail.js'
-import YogaAlice from './containers/YogaAlice.js'
-import Courses from './containers/Courses.js'
+import Alice from './containers/Alice.js'
+import Yoga from './containers/Yoga.js'
 import Shiatsu from './containers/Shiatsu.js'
 import Stages from './containers/Stages.js'
 import Contact from './containers/Contact.js'
@@ -29,8 +29,8 @@ class App extends Component {
     return (
       <Router>
         <Home {...this.state} path="/" />
-        <YogaAlice {...this.state} path="/yoga-alice" />
-        <Courses {...this.state} path="/cours" />
+        <Alice {...this.state} path="/about-me" />
+        <Yoga {...this.state} path="/yoga" />
         <Shiatsu {...this.state} path="/shiatsu" />
         <Stages {...this.state} path="/stages" />
         <InspirationsDisplay {...this.state} path="/inspirations" />

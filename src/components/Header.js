@@ -10,36 +10,41 @@ const closeNav = () => {
   document.getElementById('burgerNav').style.width = '0%'
 }
 
-const Header = () =>
+const Header = () => (
   <header id="yogaAliceHeader">
     <div id="yogaAliceLogo">
-      <img src={Logo} alt='logo Yoga Alice' />
-      <Link to='/'>Yoga ALice</Link>
+      <img src={Logo} alt="logo Alice Ollagnon - yoga & shiatsu" />
+      <Link to="/">Alice Ollagnon</Link>
     </div>
     <nav id="mainNav">
-      <Link to='/'>Accueil</Link>
-      <Link to='/yoga-alice'>Yoga ALice</Link>
-      <Link to='/cours'>Cours</Link>
-      <Link to='/shiatsu'>Shiatsu</Link>
-      <Link to='/stages'>Stages</Link>
-      <Link to='/inspirations'>Inspirations</Link>
-      <Link to='/contact'>Contact</Link>
+      <Link to="/">Accueil</Link>
+      <Link to="/about-me">Alice</Link>
+      <Link to="/yoga">Yoga</Link>
+      <Link to="/shiatsu">Shiatsu</Link>
+      <Link to="/stages">Stages</Link>
+      <Link to="/inspirations">Inspirations</Link>
+      <Link to="/contact">Contact</Link>
     </nav>
     <div id="burgerBtn">
-      <a title="Burger button" id="openNavBtn" onClick={openNav}>&#9776;</a>
+      <a title="Burger button" id="openNavBtn" onClick={openNav}>
+        &#9776;
+      </a>
     </div>
     <div id="burgerNav" className="overlay">
-      <a id="closeNavBtn" onClick={closeNav}>&times;</a>
+      <a id="closeNavBtn" onClick={closeNav}>
+        &times;
+      </a>
       <nav className="overlay-content">
-        <Link to='/'>Accueil</Link>
-        <Link to='/yoga-alice'>Yoga ALice</Link>
-        <Link to='/cours'>Cours</Link>
-        <Link to='/shiatsu'>Shiatsu</Link>
-        <Link to='/stages'>Stages</Link>
-        <Link to='/inspirations'>Inspirations</Link>
-        <Link to='/contact'>Contact</Link>
+        <Link to="/">Accueil</Link>
+        <Link to="/about-me">Alice</Link>
+        <Link to="/yoga">Yoga</Link>
+        <Link to="/shiatsu">Shiatsu</Link>
+        <Link to="/stages">Stages</Link>
+        <Link to="/inspirations">Inspirations</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </div>
   </header>
+)
 
 export default Header
