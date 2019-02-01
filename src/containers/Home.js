@@ -26,13 +26,13 @@ class Home extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     getAllInspirations('fo').then(actions.loadInspirations)
 
     setInterval(this.animateCarousel, 9000)
   }
 
-  render() {
+  render () {
     return (
       <Container fluid>
         <Header />
