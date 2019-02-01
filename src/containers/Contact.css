@@ -7,7 +7,7 @@
 }
 
 .contactBackground {
-  background-image: url('http://localhost:5300/images/photo-contact.jpg');
+  background-image: url('https://alice-ollagnon-server.herokuapp.com/images/photo-contact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +15,7 @@
 }
 
 .contactBackgroundStages {
-  background-image: url('http://localhost:5300/images/stages-1.jpg');
+  background-image: url('https://alice-ollagnon-server.herokuapp.com/images/stages-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -14,7 +14,7 @@
 }
 
 .parallax {
-  background-image: url('http://localhost:5300/images/concrete_seamless.png');
+  background-image: url('https://alice-ollagnon-server.herokuapp.com/images/concrete_seamless.png');
   height: 300px;
   background-attachment: fixed;
   background-position: center;
@@ -22,7 +22,7 @@
 }
 
 #forme-parallax-1 {
-  background-image: url('http://localhost:5300/images/forme5.png');
+  background-image: url('https://alice-ollagnon-server.herokuapp.com/images/forme5.png');
   z-index: 10;
   position: absolute;
   width: 150px;
@@ -33,7 +33,7 @@
 }
 
 #forme-parallax-2 {
-  background-image: url('http://localhost:5300/images/forme3.png');
+  background-image: url('https://alice-ollagnon-server.herokuapp.com/images/forme3.png');
   z-index: 10;
   position: absolute;
   width: 100px;
@@ -44,7 +44,7 @@
 }
 
 #forme-parallax-3 {
-  background-image: url(http://localhost:5300/images/forme6.png);
+  background-image: url(https://alice-ollagnon-server.herokuapp.com/images/forme6.png);
   z-index: 10;
   position: absolute;
   width: 150px;
