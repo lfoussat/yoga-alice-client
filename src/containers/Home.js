@@ -26,13 +26,13 @@ class Home extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     getAllInspirations('fo').then(actions.loadInspirations)
 
     setInterval(this.animateCarousel, 9000)
   }
 
-  render () {
+  render() {
     return (
       <Container fluid>
         <Header />
@@ -117,7 +117,7 @@ class Home extends Component {
               <div
                 id="testImg"
                 style={{
-                  backgroundImage: `url(${api}/public/images/stages-eleves.jpg)`,
+                  backgroundImage: `url(${api}/images/stages-eleves.jpg)`,
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'cover',
                   minHeight: '600px'
