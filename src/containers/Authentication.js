@@ -2,7 +2,7 @@ import React from 'react'
 import SignIn from '../components/SignIn.js'
 import SignUp from '../components/SignUp.js'
 import { Redirect, navigate } from '@reach/router'
-import { sendLogin } from '../api' // sendSignUp
+import { sendLogin, sendSignUp } from '../api' // sendSignUp
 import { actions } from '../store'
 
 const getFormBody = event => {

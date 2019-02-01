@@ -17,7 +17,7 @@ import SiteMap from './components/SiteMap.js'
 import './App.css'
 
 class App extends Component {
-  constructor() {
+  constructor () {
     super()
     this.state = store.getState()
     store.subscribe(() => {
@@ -25,7 +25,7 @@ class App extends Component {
     })
   }
 
-  render() {
+  render () {
     return (
       <Router>
         <Home {...this.state} path="/" />
