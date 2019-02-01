@@ -45,12 +45,12 @@ class App extends Component {
         <MyInspirations {...this.state} new path="/my-inspirations/new" />
         <InspirationEditor {...this.state} path="/inspirations/form/:id" />
         <Authentication {...this.state} path="/sign-in" />
-        <Authentication {...this.state} signUp path="/sign-up" />
         <MyProfile {...this.state} path="/profile" />
         <SiteMap {...this.state} path="/site-map" />
       </Router>
     )
   }
 }
+// <Authentication {...this.state} signUp path="/sign-up" />
 
 export default App
