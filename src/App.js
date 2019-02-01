@@ -17,7 +17,7 @@ import SiteMap from './components/SiteMap.js'
 import './App.css'
 
 class App extends Component {
-  constructor () {
+  constructor() {
     super()
     this.state = store.getState()
     store.subscribe(() => {
@@ -25,7 +25,7 @@ class App extends Component {
     })
   }
 
-  render () {
+  render() {
     return (
       <Router>
         <Home {...this.state} path="/" />
@@ -45,12 +45,12 @@ class App extends Component {
         <MyInspirations {...this.state} new path="/my-inspirations/new" />
         <InspirationEditor {...this.state} path="/inspirations/form/:id" />
         <Authentication {...this.state} path="/sign-in" />
+        <Authentication {...this.state} signUp path="/sign-up" />
         <MyProfile {...this.state} path="/profile" />
         <SiteMap {...this.state} path="/site-map" />
       </Router>
     )
   }
 }
-// <Authentication {...this.state} signUp path='/sign-up' />
 
 export default App
